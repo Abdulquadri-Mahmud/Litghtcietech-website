@@ -38,7 +38,7 @@ export default function Footer() {
               <Heading fontWeight={500} fontSize={{md: 25, base: 20}}>Send A Message</Heading>
             </Box>
             <Flex>
-              <input type="text" className='p-3 w-[80%] bg-white outline-none border-red-500' placeholder='Leave a message...'/>
+              <input type="text" className='p-3 rounded-none w-[80%] bg-white outline-none border-red-500' placeholder='Leave a message...'/>
               <Button py={6} bg={'red.500'} color={'white'} rounded={0}>Send Now</Button>
             </Flex>
           </Box>
