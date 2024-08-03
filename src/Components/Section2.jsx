@@ -36,23 +36,23 @@ export default function Section2() {
         <Box pt={5}>
             <List spacing={3}>
                 <ListItem>
-                    <ListIcon as={MdCheckCircle} color='green.500' />
+                    <ListIcon as={MdCheckCircle} color='red.500' />
                     Site survey
                 </ListItem>
                 <ListItem>
-                    <ListIcon as={MdCheckCircle} color='green.500' />
+                    <ListIcon as={MdCheckCircle} color='red.500' />
                     Data analysis includingsoil resistivity profiling
                 </ListItem>
                 <ListItem>
-                    <ListIcon as={MdCheckCircle} color='green.500' />
+                    <ListIcon as={MdCheckCircle} color='red.500' />
                     Designed base on Cdeg software and CAD 
                 </ListItem>
                 <ListItem>
-                    <ListIcon as={MdCheckCircle} color='green.500' />
+                    <ListIcon as={MdCheckCircle} color='red.500' />
                     Materials procurement, supply and installation
                 </ListItem>
                 <ListItem>
-                    <ListIcon as={MdCheckCircle} color='green.500' />
+                    <ListIcon as={MdCheckCircle} color='red.500' />
                     Materials and site assessment, inspection and maintenance
                 </ListItem>
             </List>
