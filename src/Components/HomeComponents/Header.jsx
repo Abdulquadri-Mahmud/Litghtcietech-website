@@ -8,9 +8,9 @@ import Sidemenu from './Sidemenu';
 export default function Header() {
   return (
     <Box position={'sticky'} top={0} zIndex={100}>
-        <Flex justifyContent={'space-between'} alignItems={'center'} py={4} px={{md: 8, base: 5}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
+        <Flex justifyContent={'space-between'} alignItems={'center'} py={4} px={{md: 8, base: 3}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
             <Box>
-                <Heading  fontWeight={500} fontSize={30} color={'gray.800'}>LightCie<span className='text-red-500'>Tech</span></Heading>
+                <Heading fontWeight={500} fontSize={{md: 30, base: 25}} color={'gray.800'}>LIGHTCIE<span className="text-red-500">TECH</span><sub className='text-gray-700'>LTD</sub></Heading>
             </Box>
             <Box className='nav' display={{md: 'block', base: 'none'}}  color={'gray.800'}>
                 <Link className='px-3 text-lg' to={'/'}>Home</Link>
