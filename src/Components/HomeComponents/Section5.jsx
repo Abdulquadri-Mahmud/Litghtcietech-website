@@ -36,7 +36,7 @@ export default function Section5() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         pauseOnHover: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -45,6 +45,13 @@ export default function Section5() {
               breakpoint: 600,
               settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 420,
+              settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1,
               }
             }
