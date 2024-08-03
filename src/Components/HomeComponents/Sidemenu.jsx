@@ -10,6 +10,7 @@ import {
     DrawerCloseButton,
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { CgMenuBoxed } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 
 export default function Sidemenu() {
@@ -18,7 +19,7 @@ export default function Sidemenu() {
 
   return (
     <Box fontWeight={500}>
-        <Button colorScheme='blue' onClick={onOpen} bg={'transparent'} _hover={{bg: 'transparent'}}><GiHamburgerMenu className='text-white text-3xl'/></Button>
+        <Button colorScheme='blue' onClick={onOpen} bg={'transparent'} _hover={{bg: 'transparent'}}><CgMenuBoxed className='text-red-500 text-4xl'/></Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>

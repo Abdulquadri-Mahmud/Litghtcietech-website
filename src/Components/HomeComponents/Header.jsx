@@ -7,12 +7,12 @@ import Sidemenu from './Sidemenu';
 
 export default function Header() {
   return (
-    <Box position={'sticky'} top={0}>
+    <Box position={'sticky'} top={0} zIndex={100}>
         <Flex justifyContent={'space-between'} alignItems={'center'} py={4} px={{md: 8, base: 5}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
             <Box>
-                <Heading  fontWeight={500} fontSize={30}>LightCie<span className='text-red-500'>Tech</span></Heading>
+                <Heading  fontWeight={500} fontSize={30} color={'gray.800'}>LightCie<span className='text-red-500'>Tech</span></Heading>
             </Box>
-            <Box className='nav' display={{md: 'block', base: 'none'}}>
+            <Box className='nav' display={{md: 'block', base: 'none'}}  color={'gray.800'}>
                 <Link className='px-3 text-lg' to={'/'}>Home</Link>
                 <Link className='px-3 text-lg' to={'/'}>About</Link>
                 <Link className='px-3 text-lg' to={'/'}>Blog</Link>

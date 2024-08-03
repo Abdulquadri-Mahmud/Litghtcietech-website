@@ -54,7 +54,7 @@ export default function Hero() {
     <Box h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'}>
         <Slider {...settings}>
           <Box position={'relative'} backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg.jpg'} h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'} bgBlendMode="multiply" className='deep'>
-            <Header/>
+            {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '3xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
@@ -73,7 +73,7 @@ export default function Hero() {
             </Flex>
           </Box>
           <Box position={'relative'} backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg3.jpg'} h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'} bgBlendMode="multiply" className='deep'>
-            <Header/>
+            {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '3xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
@@ -92,7 +92,7 @@ export default function Hero() {
             </Flex>
           </Box>
           <Box position={'relative'} backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg1.jpg'} h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'} bgBlendMode="multiply" className='deep'>
-            <Header/>
+            {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '3xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
