@@ -1,0 +1,28 @@
+import { Box, Button, Flex, Heading } from '@chakra-ui/react'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { HiOutlineMail } from "react-icons/hi";
+import { FaPhoneVolume } from "react-icons/fa6";
+import Sidemenu from './Sidemenu';
+
+export default function Header() {
+  return (
+    <Box position={'sticky'} top={0}>
+        <Flex justifyContent={'space-between'} alignItems={'center'} py={4} px={{md: 8, base: 5}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
+            <Box>
+                <Heading  fontWeight={500} fontSize={30}>LightCie<span className='text-red-500'>Tech</span></Heading>
+            </Box>
+            <Box className='nav' display={{md: 'block', base: 'none'}}>
+                <Link className='px-3 text-lg' to={'/'}>Home</Link>
+                <Link className='px-3 text-lg' to={'/'}>About</Link>
+                <Link className='px-3 text-lg' to={'/'}>Blog</Link>
+                <Link className='px-3 text-lg' to={'/'}>Services</Link>
+                <Link className='px-3 text-lg' to={'/'}>Contact Us</Link>
+            </Box>
+            <Box display={{md: 'none', base: 'block'}}>
+              <Sidemenu/>
+            </Box>
+        </Flex>
+    </Box>
+  )
+}

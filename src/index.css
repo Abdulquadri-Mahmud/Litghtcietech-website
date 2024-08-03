@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.deep{
+    background: rgb(102, 101, 101);
+}
+
+.glass{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(107, 107, 107, 0.75);
+}
+
+.nav a{
+    position: relative;
+}
+.nav a::after{ 
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(239 68 68);
+    /* overflow: hidden; */
+}
+
+.nav a::after:hover{
+    width: 100%;
+}
