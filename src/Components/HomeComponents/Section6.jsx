@@ -76,7 +76,7 @@ export default function Section6() {
           </Box>
         </Box>
         <Flex justifyContent={'center'} mt={6}>
-          <Button color={'red.500'} rounded={3}><Link to={'products'}>See More Of Our Products</Link></Button>
+          <Button color={'red.500'} fontWeight={400} rounded={3}><Link to={'products'}>See More Of Our Products</Link></Button>
         </Flex>
     </Box>
   )

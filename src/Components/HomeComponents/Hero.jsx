@@ -53,7 +53,7 @@ export default function Hero() {
   return (
     <Box h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'}>
         <Slider {...settings}>
-          <Box position={'relative'} backgroundPosition={{md:'center', base: "right"}} backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg.jpg'} h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'} bgBlendMode="multiply" className='deep'>
+          <Box position={'relative'} backgroundPosition={{md:'center', base: "right"}} backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/about.jpg'} h={{'2xl': '90vh',md:'100vh', base: '100vh'}} w={'full'} bgBlendMode="multiply" className='deep'>
             {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
