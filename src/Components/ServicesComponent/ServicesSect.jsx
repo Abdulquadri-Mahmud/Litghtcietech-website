@@ -114,7 +114,7 @@ export default function ServicesSect() {
                     </Accordion>
                 </Box>
                 <Box width={{md: '49%', base: '100%'}}>
-                    <Accordion defaultIndex={[0]} allowMultiple>
+                    <Accordion allowMultiple>
                         <AccordionItem border={'none'} _hover={{bg: 'none'}}>
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>

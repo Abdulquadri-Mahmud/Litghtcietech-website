@@ -32,6 +32,7 @@ export default function Sidemenu() {
                         <Link className='hover:text-red-500 duration-200' to='/'>Home</Link>
                         <Link className='hover:text-red-500 duration-200' to='/about'>About Us</Link>
                         <Link className='hover:text-red-500 duration-200' to='/blog'>Blogs</Link>
+                        <Link className='hover:text-red-500 duration-200' to='/products'>Our Products</Link>
                         <Link className='hover:text-red-500 duration-200' to='/Service'>Our Services</Link>
                         <Link className='hover:text-red-500 duration-200' to='/contact'>Contact Us</Link>
                     </Flex>
