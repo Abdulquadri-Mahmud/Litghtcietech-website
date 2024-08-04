@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Blog() {
   return (
     <Box>
-        <Flex justifyContent={'center'} alignItems={'center'} backgroundPosition={{md: 'bottom', base: "center"}} backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg1.jpg'} h={'45vh'} w={'full'} bgBlendMode="multiply" className='glass'>
+        <Flex justifyContent={'center'} alignItems={'center'} backgroundPosition={{md: 'bottom', base: "center"}} backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg1.jpg'} h={'45vh'} w={'full'} bgBlendMode="multiply" className='deep'>
             <Box color={'white'}>
                 <Heading textAlign={'center'} fontSize={{md: 45, base: 30}}>Our Blog</Heading>
                 <Box mt={3} textAlign={'center'}>
