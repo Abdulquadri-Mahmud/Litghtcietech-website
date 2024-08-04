@@ -14,18 +14,19 @@
 
 .nav a{
     position: relative;
+    font-weight: 500;
 }
 .nav a::after{ 
     content: '';
     position: absolute;
-    bottom: -22px;
+    bottom: -26px;
     left: 0;
     width: 0%;
     height: 3px;
     background-color: rgb(239 68 68);
-    /* overflow: hidden; */
+    transition: all 0.3s;
 }
 
-.nav a::after:hover{
+.nav a:hover::after{
     width: 100%;
 }

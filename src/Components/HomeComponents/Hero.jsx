@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
-import Header from './Header';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 // import img1 from '/bg1.jpg';
 // import img2 from '/bg2.jpg';
@@ -67,7 +67,7 @@ export default function Hero() {
                   disaster and devastation....
                 </Text>
                 <Button w={{base: 170, md:170}} height={'45px'} mt={5} bg={'white'} _hover={{bg: 'whiteAlpha.500'}} color={'black'} rounded={3} textTransform={'uppercase'}>
-                  <Link to='/about'>Read More</Link>
+                  <Link to='/about' className='flex items-center gap-2 text-red-500'>Read More<FaArrowRightLong/></Link>
                 </Button>
               </Box>
             </Flex>
@@ -85,8 +85,8 @@ export default function Hero() {
                   everyone apprehensive. Lightning by its nature possesses a tremendous potentiality for inflicting untold
                   disaster and devastation....
                 </Text>
-                <Button w={{base: 170, md:170}} height={'40px'} mt={5} bg={'white'} _hover={{bg: 'whiteAlpha.500'}} color={'black'} rounded={3} textTransform={'uppercase'}>
-                  <Link to='/about'>Read More</Link>
+                <Button w={{base: 170, md:170}} height={'45px'} mt={5} bg={'white'} _hover={{bg: 'whiteAlpha.500'}} color={'black'} rounded={3} textTransform={'uppercase'}>
+                  <Link to='/about' className='flex items-center gap-2 text-red-500'>Read More<FaArrowRightLong/></Link>
                 </Button>
               </Box>
             </Flex>
@@ -104,8 +104,8 @@ export default function Hero() {
                   everyone apprehensive. Lightning by its nature possesses a tremendous potentiality for inflicting untold
                   disaster and devastation....
                 </Text>
-                <Button w={{base: 170, md:170}} height={'40px'} mt={5} bg={'white'} _hover={{bg: 'whiteAlpha.500'}} color={'black'} rounded={3} textTransform={'uppercase'}>
-                  <Link to='/about'>Read More</Link>
+                <Button w={{base: 170, md:170}} height={'45px'} mt={5} bg={'white'} _hover={{bg: 'whiteAlpha.500'}} color={'black'} rounded={3} textTransform={'uppercase'}>
+                  <Link to='/about' className='flex items-center gap-2 text-red-500'>Read More<FaArrowRightLong/></Link>
                 </Button>
               </Box>
             </Flex>

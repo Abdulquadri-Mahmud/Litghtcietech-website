@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -6,15 +6,26 @@ export default function Footer() {
   return (
     <Box bg={'gray.800'} p={{md: 10, base: 4}} >
       <Box maxW={{'2xl': '80%', md: '90%', base: '100%'}} mx={'auto'}>
-        <Box bg={'white'} mx={'auto'} width={{md: '270px', base: '230px'}} p={2} rounded={3}>
-          <Heading fontWeight={500} fontSize={{md: 30, base: 25}} color={'gray.700'}>LIGHTCIE<span className="text-red-500">TECH</span><sub className='text-gray-700'>LTD</sub></Heading>
+        <Box bg={'white'} mx={'auto'} width={{md: '270px', base: '100%'}} p={1} rounded={3}>
+          <Image src='/logo.png' maxW={'200px'}/>
         </Box>
-        <Box mt={16} color={'white'} className='grid grid-cols-1 gap-5 md:grid-cols-3 md:place-content-center'>
+        <Box mt={16} color={'white'} className='grid grid-cols-1 gap-7 md:grid-cols-3 md:place-content-center'>
           <Box>
-            <Box mb={4}>
-              <Heading fontWeight={500} fontSize={{md: 25, base: 20}}>Address</Heading>
-            </Box>
-            <Stack>
+            <Flex alignItems={'center'} justifyContent={{md:'center', base: 'start'}} gap={1} position={'relative'} mb={4}>
+              <Box width={'12px'} height={'12px'} bg={'red.50'} rounded={'50%'}></Box>
+              <Heading fontWeight={500} fontSize={{md: 25, base: 20}} textAlign={{md: 'center', base: 'start'}}>About Us</Heading>
+            </Flex>
+            <Stack textAlign={{md: 'center', base: 'start'}}>
+              <Text>We are earthing and lighting hazard consultants, with appreciable experience in the design, procurement, supply, installation, inspection, and maintenance of effective and up-to-date system for checking earthing deficiency and lightning strikes.</Text>
+              <Link className='text-red-500'>Read More...</Link>
+            </Stack>
+          </Box>
+          <Box>
+            <Flex alignItems={'center'} justifyContent={{md:'center', base: 'start'}} gap={1} position={'relative'} mb={4}>
+              <Box width={'12px'} height={'12px'} bg={'red.50'} rounded={'50%'}></Box>
+              <Heading fontWeight={500} fontSize={{md: 25, base: 20}} textAlign={{md: 'center', base: 'start'}}>Address</Heading>
+            </Flex>
+            <Stack textAlign={{md: 'center', base: 'start'}}>
               <Text>4A Abule Nla Street,Off Apapa Road,</Text>
               <Text>Ebute Metta West, Lagos, Nigeria.</Text>
               <Text>Tel: <Link to={'/tel:08028309774'}>(+234)802-8309-774</Link></Text>
@@ -22,25 +33,17 @@ export default function Footer() {
             </Stack>
           </Box>
           <Box>
-            <Box mb={4}>
-              <Heading fontWeight={500} fontSize={{md: 25, base: 20}}>Quick Links</Heading>
-            </Box>
-            <Stack>
-              <Link className='text-md ' to={'/'}>Home</Link>
-              <Link className='text-md ' to={'/'}>About</Link>
-              <Link className='text-md ' to={'/'}>Blog</Link>
-              <Link className='text-md ' to={'/'}>Services</Link>
-              <Link className='text-md ' to={'/'}>Contact Us</Link>
-            </Stack>
-          </Box>
-          <Box>
-            <Box mb={4}>
-              <Heading fontWeight={500} fontSize={{md: 25, base: 20}}>Send A Message</Heading>
-            </Box>
-            <Flex>
-              <input type="text" className='p-3 rounded-none w-[80%] bg-white outline-none border-red-500' placeholder='Leave a message...'/>
-              <Button py={6} bg={'red.500'} color={'white'} rounded={0}>Send Now</Button>
+            <Flex alignItems={'center'} justifyContent={{md:'center', base: 'start'}} gap={1} position={'relative'} mb={4}>
+              <Box width={'12px'} height={'12px'} bg={'red.50'} rounded={'50%'}></Box>
+              <Heading fontWeight={500} fontSize={{md: 25, base: 20}} textAlign={{md: 'center', base: 'start'}}>Quick Links</Heading>
             </Flex>
+            <Stack textAlign={{md: 'center', base: 'start'}}>
+              <Link className='text-md ' to={'/'}>Home</Link>
+              <Link className='text-md ' to={'/about'}>About</Link>
+              <Link className='text-md ' to={'/blog'}>Blog</Link>
+              <Link className='text-md ' to={'/service'}>Services</Link>
+              <Link className='text-md ' to={'/contact'}>Contact Us</Link>
+            </Stack>
           </Box>
         </Box>
         <Box pt={8} color={'white'}>
