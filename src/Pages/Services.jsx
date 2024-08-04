@@ -1,6 +1,7 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ServicesSect from '../Components/ServicesComponent/ServicesSect'
 
 export default function Services() {
   return (
@@ -14,8 +15,8 @@ export default function Services() {
                 </Box>
             </Box>
         </Flex>
-        <Box py={'10vh'}>
-
+        <Box py={''} bg={'gray.800'}>
+            <ServicesSect/>
         </Box>
     </Box>
   )

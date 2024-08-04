@@ -74,65 +74,9 @@ export default function Section4() {
                 </Box>
             </Flex>
             <Box px={4}>
-                <Link to={'/services'} className='text-red-500 underline flex items-center gap-1'>Read More <FaArrowRightLong/></Link>
+                <Link to={'/service'} className='text-red-500 underline flex items-center gap-1'>Read More <FaArrowRightLong/></Link>
             </Box>
         </Box>
-        {/* <Box bg={'white'} p={4} className='grid grid-cols-1 md:grid-cols-3 mx-3 md:mx-0 text-white gap-4 place-content-center'>
-            <Box p={7} rounded={5}>
-                <Accordion defaultIndex={[0]} allowMultiple>
-                    <AccordionItem border={'none'} _hover={{bg: 'none'}}>
-                        <h2>
-                        <AccordionButton>
-                            <Box as='span' flex='1' textAlign='left'>
-                                <Heading fontWeight={500} fontSize={25} color={'red.500'}>Testing</Heading>
-                            </Box>
-                        </AccordionButton>
-                        </h2>
-                        <AccordionPanel>
-                            <Text>
-                                    Our team of expert engineers undertakes detailed testing and inspection of completed installation. This includes commissioning, verifying the installation is in accordance with the required specification and is in compliance with all current legislation.
-                            </Text>
-                        </AccordionPanel>
-                    </AccordionItem>
-                </Accordion>
-            </Box>
-            <Box p={7} rounded={5}>
-                <Accordion defaultIndex={[0]} allowMultiple>
-                    <AccordionItem border={'none'} _hover={{bg: 'none'}}>
-                        <h2>
-                        <AccordionButton>
-                            <Box as='span' flex='1' textAlign='left'>
-                                <Heading fontWeight={500} fontSize={25} color={'red.500'}>Testing</Heading>
-                            </Box>
-                        </AccordionButton>
-                        </h2>
-                        <AccordionPanel>
-                            <Text>
-                                    Our team of expert engineers undertakes detailed testing and inspection of completed installation. This includes commissioning, verifying the installation is in accordance with the required specification and is in compliance with all current legislation.
-                            </Text>
-                        </AccordionPanel>
-                    </AccordionItem>
-                </Accordion>
-            </Box>
-            <Box p={7} rounded={5}>
-                <Accordion defaultIndex={[0]} allowMultiple>
-                    <AccordionItem border={'none'} _hover={{bg: 'none'}}>
-                        <h2>
-                        <AccordionButton>
-                            <Box as='span' flex='1' textAlign='left'>
-                                <Heading fontWeight={500} fontSize={25} color={'red.500'}>Testing</Heading>
-                            </Box>
-                        </AccordionButton>
-                        </h2>
-                        <AccordionPanel>
-                            <Text>
-                                    Our team of expert engineers undertakes detailed testing and inspection of completed installation. This includes commissioning, verifying the installation is in accordance with the required specification and is in compliance with all current legislation.
-                            </Text>
-                        </AccordionPanel>
-                    </AccordionItem>
-                </Accordion>
-            </Box>
-        </Box> */}
     </Box>
   )
 }
