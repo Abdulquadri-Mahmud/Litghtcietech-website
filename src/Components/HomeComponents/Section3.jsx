@@ -13,7 +13,7 @@ export default function Section3() {
     <Box pb={'10vh'} px={3} bg={'gray.800'} color={'white'} py={10}>
         <Box maxW={{'2xl': '80%', md: '90%', base: '100%'}} mx={'auto'}>
             <Box>
-                <Heading textAlign={'center'} fontWeight={500} fontSize={{md: 35, base: 25}} width={{md:'60%', base: '100%'}} mx={'auto'}>PROTECTION <span className="text-red-500">FOR</span> EARTHING <span className="text-red-500">AND</span> LIGHTNING <span className="text-red-500">PROTECTION</span></Heading>
+                <Heading textAlign={'center'} fontWeight={500} fontSize={{md: 35, base: 25}} width={{md:'60%', base: '100%'}} mx={'auto'}>PROTECTION <span className="text-red-500">FOR</span> EARTHING <span className="text-red-500">AND</span> LIGHTNING PROTECTION</Heading>
                 <Box width={'100px'} height={'3px'} mx={'auto'} bg={'red.500'} my={2}></Box>
                 <Text textAlign={'center'} width={{md:'60%', base: '100%'}} mx={'auto'} pt={3}>Our customers made us the African market leader in earthingand lightningprotection. They recognizedthat our commitment to
                     higher standards of service and safety meant
