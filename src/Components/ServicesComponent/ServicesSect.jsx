@@ -31,7 +31,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Lightcietech Service</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Lightcietech Service</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -46,7 +46,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Testing</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Testing</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -61,7 +61,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Lightcietech Security</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Lightcietech Security</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -85,7 +85,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Data Analysis</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Data Analysis</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -100,7 +100,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Design</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Design</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -114,12 +114,12 @@ export default function ServicesSect() {
                     </Accordion>
                 </Box>
                 <Box width={{md: '49%', base: '100%'}}>
-                    <Accordion allowMultiple>
+                    <Accordion defaultIndex={[0]} allowMultiple>
                         <AccordionItem border={'none'} _hover={{bg: 'none'}}>
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Lightcietech Safety</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Lightcietech Safety</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -134,7 +134,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Maintenance</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Maintenance</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -151,7 +151,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Site surveys</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Site surveys</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -166,7 +166,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Installation</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Installation</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>
@@ -181,7 +181,7 @@ export default function ServicesSect() {
                             <h2>
                             <AccordionButton py={{md: 2, base: 1}} px={3}>
                                 <Box as='span' flex='1' textAlign='left' >
-                                    <Heading fontWeight={500} fontSize={25} color={'red.500'}>Supply</Heading>
+                                    <Heading fontWeight={400} fontSize={22} color={'red.500'}>Supply</Heading>
                                 </Box>
                                 <AccordionIcon />
                             </AccordionButton>

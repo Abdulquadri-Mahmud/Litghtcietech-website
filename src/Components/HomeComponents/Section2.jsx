@@ -4,8 +4,6 @@ import {
     List,
     ListItem,
     ListIcon,
-    OrderedList,
-    UnorderedList,
 } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 
@@ -19,7 +17,7 @@ export default function Section2() {
         </Box>
         <Flex justifyContent={'space-around'} pt={{md: 12, base: 5}} flexWrap={'wrap'}>
             <Box width={{md: '45%', base: '100%'}}>
-                <Image src='/bg1.jpg' maxW={'100%'} rounded={5}/>
+                <Image src='/bg1.jpg' maxW={'100%'} borderWidth={3} borderColor={'gray'} rounded={5}/>
             </Box>
             <Box width={{md: '50%', base: '100%'}} pt={{md: 0, base: 5}}>
                 <Text>
