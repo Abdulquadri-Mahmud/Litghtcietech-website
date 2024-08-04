@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import Footer from '../Components/HomeComponents/Footer';
 import Header from '../Components/HomeComponents/Header';
+import Services from '../Pages/Services';
+import Blog from '../Pages/Blog';
+import About from '../Pages/About';
+import Contact from '../Pages/Contact';
+import NotFound from '../Pages/NotFound';
 
 export default function RoutePage() {
   return (
@@ -10,7 +15,11 @@ export default function RoutePage() {
       <Header/>
         <Routes>
             <Route path='/' element={<Home/>}/>
-            {/* <Route path='/contact' element={<Contact/>}/> */}
+            <Route path='/about' element={<About/>}/>
+            <Route path='/blog' element={<Blog/>}/>
+            <Route path='/service' element={<Services/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer/>
     </Router>
