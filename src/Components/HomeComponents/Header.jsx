@@ -10,7 +10,9 @@ export default function Header() {
     <Box position={'sticky'} top={0} zIndex={100}>
         <Flex justifyContent={'space-between'} alignItems={'center'} py={2} px={{md: 8, base: 3}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
             <Box>
-              <Image src='/logo.png' maxW={'200px'}/>
+              <Link to={'/'}>
+                <Image src='/logo.png' maxW={'200px'}/>
+              </Link>
             </Box>
             <Box className='nav' display={{md: 'block', base: 'none'}}  color={'gray.800'}>
                 <Link className='px-3 hover:text-red-500 duration-200 text-lg' to={'/'}>Home</Link>
