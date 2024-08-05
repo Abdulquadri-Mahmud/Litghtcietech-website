@@ -82,23 +82,37 @@ export default function Section5() {
                 </Box>
                 <Box>
                     <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
-                        <Heading textAlign={'center'} color={'gray.700'} fontSize={30} fontWeight={500} className='flex '>Mega<span className="flex items-center flex-col">Letrics<span className='font-thin'>LIMITED</span></span></Heading>
+                        <Heading textAlign={'center'} color={'gray.700'} fontSize={25} fontWeight={500} className='flex '>Mega<span className="flex items-center flex-col">Letrics<span className='font-thin'>LIMITED</span></span></Heading>
+                    </Flex>
+                </Box>
+                <Box>
+                    <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
+                        <Heading textAlign={'center'} color={'gray.700'} fontSize={25} fontWeight={500} className='flex '>Apice Group Ltd</Heading>
                     </Flex>
                 </Box>
                 <Box>
                     <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
                         <Box>
-                            <Heading textAlign={'center'} color={'gray.700'} fontSize={30} fontWeight={500}>MELCON M NIG. LTD.</Heading>
+                            <Heading textAlign={'center'} color={'gray.700'} fontSize={25} fontWeight={500}>MELCON M NIG. LTD.</Heading>
                             <Text textAlign={'center'} color={'gray.700'}>Chartered Engineers & Project Managers</Text>
                         </Box>
                     </Flex>
                 </Box>
-                {/* <Box>
-                    <Image src='/logo1.jpg'/>
+                <Box>
+                  <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
+                    <Image maxW={'100%'} maxH={'180px'} src='/logo5.jpg'/>
+                  </Flex>
                 </Box>
                 <Box>
-                    <Image src='/logo1.jpg'/>
-                </Box> */}
+                    <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
+                      <Image maxW={'100%'} maxH={'180px'} src='/logo6.png'/>
+                    </Flex>
+                </Box>
+                <Box>
+                    <Flex justifyContent={'center'} alignItems={'center'} px={3} rounded={5} bg={'white'} height={'180px'} mx={2}>
+                      <Image maxW={'100%'} maxH={'180px'} src='/logo4.png' alt='Seplat Energy'/>
+                    </Flex>
+                </Box>
             </Slider>
         </Box>
     </Box>

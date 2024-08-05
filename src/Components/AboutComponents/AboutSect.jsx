@@ -13,7 +13,7 @@ export default function AboutSect() {
         <Box>
             <Heading textAlign={'center'} fontWeight={500}>Our Company</Heading>
             <Box width={'100px'} height={'3px'} mx={'auto'} bg={'red.500'} my={2}></Box>
-            <Text textAlign={'center'} width={{md:'60%', base: '100%'}} mx={'auto'} pt={3}>We are earthing and lighting hazard consultants, with appreciable experience in the design, procurement, supply, installation, inspection, and maintenance of effective and up-to-date system for checking earthing deficiency and lightning strikes.</Text>
+            <Text textAlign={'center'} width={{md:'60%', base: '100%'}} mx={'auto'} pt={3}>We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement, supply, installation, inspection, and maintenance of effective and up-to-date system for checking earthing deficiency and lightning strikes.</Text>
         </Box>
         <Flex justifyContent={'space-around'} pt={{md: 12, base: 5}} flexWrap={'wrap'}>
             <Box width={{md: '45%', base: '100%'}}>

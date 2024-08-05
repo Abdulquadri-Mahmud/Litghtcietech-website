@@ -60,7 +60,7 @@ export default function Hero() {
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
-                  We are earthing and lighting hazard consultants, with appreciable experience in the design, procurement,
+                  We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,
                   supply, installation, inspection, and maintenance of effective and up-to-date s.s:em for checking earthing
                   deficiency and lightning strikes. The prospect of a lightning strike is profoundly disturbing and renders
                   everyone apprehensive. Lightning by its nature possesses a tremendous potentiality for inflicting untold
@@ -79,7 +79,7 @@ export default function Hero() {
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
-                  We are earthing and lighting hazard consultants, with appreciable experience in the design, procurement,
+                  We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,
                   supply, installation, inspection, and maintenance of effective and up-to-date s.s:em for checking earthing
                   deficiency and lightning strikes. The prospect of a lightning strike is profoundly disturbing and renders
                   everyone apprehensive. Lightning by its nature possesses a tremendous potentiality for inflicting untold
@@ -98,7 +98,7 @@ export default function Hero() {
                 <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
-                We are earthing and lighting hazard consultants, with appreciable experience in the design, procurement,
+                We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,
                   supply, installation, inspection, and maintenance of effective and up-to-date s.s:em for checking earthing
                   deficiency and lightning strikes. The prospect of a lightning strike is profoundly disturbing and renders
                   everyone apprehensive. Lightning by its nature possesses a tremendous potentiality for inflicting untold
