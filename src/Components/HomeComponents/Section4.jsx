@@ -73,7 +73,7 @@ export default function Section4() {
                     </Accordion>
                 </Box>
             </Flex>
-            <Box px={4} bg={'gray.800'} py={3} width={'130px'}>
+            <Box px={4} bg={'gray.800'} py={3} width={{md:'130px', base: '200px'}}>
                 <Link to={'/service'} className='text-red-500 underline flex items-center gap-1'>Read More <FaArrowRightLong/></Link>
             </Box>
         </Box>
