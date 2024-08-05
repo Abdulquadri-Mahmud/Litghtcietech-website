@@ -21,7 +21,7 @@ export default function Section4() {
         }
     }
   return (
-    <Box my={'10vh'} bg={'gray.200'}>
+    <Box my={'10vh'} bg={''}>
         <Box py={10} maxW={{'2xl': '80%', md: '90%', base: '100%'}} mx={'auto'}>
             <Box>
                 <Heading textAlign={'center'} fontWeight={500}> WITH SERVICE, SAFETY, <br /> SECURITY</Heading>
@@ -33,7 +33,7 @@ export default function Section4() {
                     as little or as much of our expertise as you need.
                 </Text>
             </Box>
-            <Flex justifyContent={'space-between'} flexWrap={'wrap'} mt={10}>
+            <Flex justifyContent={'space-between'} flexWrap={'wrap'} bg={'gray.800'} mt={10} p={{md: 10, base: 3}} color={'white'}>
                 <Box width={{md: '49%', base: '100%'}}>
                     <Accordion defaultIndex={[0]} allowMultiple>
                         <AccordionItem border={'none'} _hover={{bg: 'none'}}>
@@ -73,7 +73,7 @@ export default function Section4() {
                     </Accordion>
                 </Box>
             </Flex>
-            <Box px={4}>
+            <Box px={4} bg={'gray.800'} py={3} width={'130px'}>
                 <Link to={'/service'} className='text-red-500 underline flex items-center gap-1'>Read More <FaArrowRightLong/></Link>
             </Box>
         </Box>

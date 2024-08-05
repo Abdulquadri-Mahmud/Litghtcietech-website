@@ -3,6 +3,7 @@ import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Testimonials from './Testimonials';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -59,7 +60,7 @@ export default function Section5() {
     };
 
   return (
-    <Box py={10} mb={'10vh'} bg={'gray.800'} color={'white'}>
+    <Box py={20} mb={'10vh'} bg={'gray.800'} color={'white'}>
         <Box>
             <Heading textAlign={'center'} fontWeight={500} fontSize={30}>Our Major Clients</Heading>
         </Box>
@@ -114,6 +115,9 @@ export default function Section5() {
                     </Flex>
                 </Box>
             </Slider>
+        </Box>
+        <Box>
+          <Testimonials/>
         </Box>
     </Box>
   )
