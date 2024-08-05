@@ -73,7 +73,7 @@ export default function Contact() {
         </Flex>
         <Flex  my={'10vh'} maxW={{'2xl': '80%',xl: '85%',md: '97%'}} bg={'gray.800'} color={'white'} shadow={'md'} rounded={10} flexWrap={'wrap'} mx={'auto'}>
             <Box width={{md:'45%', base: '100%'}} height={{md: '500px', base: '300px'}} pt={5} px={{md: 5, base: 5}}>
-                <iframe width={'100%'} style={{height: '100%', borderRadius: '10px'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.467927614716!2d3.524071474081166!3d6.588611922405158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bee4740bd527b%3A0xb19235da2044f4d9!2s1%20Akin%20Ogunlewe%20Rd%2C%20Ikorodu%2C%20104102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1721227419085!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe width={'100%'} style={{height: '100%', borderRadius: '10px'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2801447088063!2d3.528210574359684!3d6.5715530226043875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bee25f8aacf87%3A0x993aeab489e9638c!2s163%20Baiyeku%20Road%2C%20Ikorodu%2C%20104102%2C%20Lagos!5e1!3m2!1sen!2sng!4v1722853158601!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </Box>
             <Box width={{md: '55%', base: '100%'}} p={{xl: 8,md: 4, base: 4}} mt={{md: 0, base: 5}}>
                 <Box>
