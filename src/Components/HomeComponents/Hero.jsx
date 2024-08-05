@@ -39,12 +39,14 @@ function SamplePrevArrow(props) {
 
 export default function Hero() {
   const settings = {
-    dots: false,
+    fade: true,
     infinite: true,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    waitForAnimate: false,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
@@ -57,7 +59,7 @@ export default function Hero() {
             {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
-                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
+                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '3xl', xl: '4xl','2xl': '5xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
                   We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,
@@ -76,7 +78,7 @@ export default function Hero() {
             {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
-                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
+                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '3xl', xl: '4xl','2xl': '5xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
                   We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,
@@ -95,7 +97,7 @@ export default function Hero() {
             {/* <Header/> */}
             <Flex justifyContent={'start'} alignItems={'center'} height={'100%'} padding={{base: 4, md:10}} zIndex={20} >
               <Box width={{md: '60%', base: '1005'}} p={{md:8, base: 0}} rounded={10}>
-                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '4xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
+                <Heading color={'white'} fontWeight={500} textAlign={{md: 'start', base: 'start'}} fontSize={{ base: '2xl', md: '3xl', xl: '4xl','2xl': '5xl'}} mt={2}>EARTHING AND LIGHTNING CHALLENGES OR HAZARDS:
                   A PROPORTION TO BRING OUR EXPERTISE TO BEAR</Heading>
                 <Text color={'white'} fontSize={{md:16, base: 16}} pt={5} fontWeight={400}>
                 We are earthing and lightning hazard consultants, with appreciable experience in the design, procurement,

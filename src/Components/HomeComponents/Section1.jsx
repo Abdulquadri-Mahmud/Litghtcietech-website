@@ -6,7 +6,7 @@ import { IoDiamond } from "react-icons/io5";
 
 export default function Section1() {
   return (
-    <Flex justifyContent={'center'} flexWrap={'wrap'} gap={4} py={'10vh'} maxW={{md: '80%',md: '90%', base: '97%'}} mx={'auto'}>
+    <Flex justifyContent={'center'} flexWrap={'wrap'} gap={4} py={'10vh'} maxW={{'2xl': '80%',md: '90%', base: '97%'}} mx={'auto'}>
         <Box width={{md: '30%', base: '100%'}} bg={'gray.800'}  rounded={5} py={{md: 7, base: 10}} px={{md: 7, base: 3}}>
             <Flex justifyContent={'center'} >
                 <Box>

@@ -11,7 +11,7 @@ export default function Header() {
         <Flex justifyContent={'space-between'} alignItems={'center'} py={2} px={{md: 8, base: 3}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
             <Box>
               <Link to={'/'}>
-                <Image src='/logo.png' maxW={'200px'}/>
+                <Image src='/logo.png' maxW={'160px'}/>
               </Link>
             </Box>
             <Box className='nav' display={{md: 'block', base: 'none'}}  color={'gray.800'}>
