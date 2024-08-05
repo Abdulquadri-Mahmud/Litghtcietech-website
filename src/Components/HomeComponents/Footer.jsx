@@ -38,8 +38,7 @@ export default function Footer() {
               <Heading fontWeight={500} fontSize={{md: 25, base: 20}} textAlign={{md: 'start', base: 'start'}}>Address</Heading>
             </Flex>
             <Stack textAlign={{md: 'start', base: 'start'}}>
-              <Text>4A Abule Nla Street,Off Apapa Road,</Text>
-              <Text>Ebute Metta West, Lagos, Nigeria.</Text>
+              <Text>163 Bayeku Road Igbogbo, Ikorodu, Lagos state,Nigeria,</Text>
               <Text>Tel: <Link to={'/tel:08028309774'}>(+234)802-8319-774</Link></Text>
               <Text>Email: lightcietechltd@gmail.com</Text>
               <Text>Email: lightcietechltd@yahoo.com</Text>
