@@ -20,17 +20,17 @@ export default function Header() {
             </Box>
             <Box alignItems={'center'} className='nav' display={{md: 'block', base: 'none'}}  color={'gray.800'}>
               <Flex alignItems={'center'}>
-                <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/'}>Home</Link>
-                <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/about'}>About</Link>
-                <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/blog'}>Blog</Link>
-                <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/service'}>Services</Link>
-                <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/contact'}>Contact Us</Link>
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/'}>Home</Link>
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/about'}>About</Link>
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/blog'}>Blog</Link>
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/service'}>Services</Link>
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/contact'}>Contact Us</Link>
                 {
                   currentAdmin && (
-                    <Link className='px-3 hover:text-red-500 duration-200 text-xl font-extralight' to={'/create-blog'}>Create Blog</Link>
+                    <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/create-blog'}>Create Blog</Link>
                   )
                 }
-                <Link className=' hover:text-red-500 duration-200 text-xl font-extralight' to={'/admin-login'}>
+                <Link className=' hover:text-red-500 duration-200 font-extralight' to={'/admin-login'}>
                   <MdOutlineAdminPanelSettings className='text-xl'/>
                 </Link>
               </Flex>
