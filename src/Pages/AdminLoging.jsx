@@ -1,17 +1,26 @@
 import { Alert, AlertIcon, Box, Button, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react'
 import { FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { adminSignInFailure, adminSignInStart, adminSignInSuccess } from '../redux/admin/adminReducer';
 
 export default function AdminLoging() {
-    const [formData, setFormData] = useState([]);
-    const [error, setError] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({});
+
+    const [adminLogInfo, setAdminLogInfo] = useState([]);
+    const { loading, error} = useSelector((state) => state.admin);
+
+    let navigate = useNavigate();
+    let dispatch = useDispatch();
 
     let email = useRef(null);
     let password = useRef(null);
     const lockPassword = useRef(null);
 
+    let adminEmail = '';
+    let adminPass = '';
+    console.log(formData);
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -24,10 +33,15 @@ export default function AdminLoging() {
             const res = await fetch(url);
             const data = await res.json();
 
-            setFormData(data);
+            setAdminLogInfo(data);
         }
         fetchAdmin();
     }, []);
+
+    adminLogInfo.map((login) => {
+        adminEmail = login.email;
+        adminPass = login.password;
+    });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -36,30 +50,30 @@ export default function AdminLoging() {
         const ifEmail = email.current.value === '';
 
         try {
-            // setLoading(true);
+            dispatch(adminSignInStart);
 
             if (ifEmail) {
-                setError('Email is required!')
-                setLoading(false);
+                dispatch(adminSignInFailure('Email is required!'));
                 return;
             }
             if (ifPassword) {
-                setError('Password is required!');
-                setLoading(false);
+                dispatch(adminSignInFailure('Password is required!'));
                 return;
             }
+            if (email.current.value !== adminEmail) {
+                dispatch(adminSignInFailure('Admin Not Found!'));
+                return;
+            }
+            if (password.current.value !== adminPass) {
+                dispatch(adminSignInFailure('Wrong Credential!'));
+                return;
+            }
+            const {password: pass, ...rest} = formData;
             
-            formData.map((data) => {
-                // console.log(data.username);
-                // if (ifEmail === ) {
-                    
-                // }
-            })
-            
+            dispatch(adminSignInSuccess(rest));
+            navigate('/create-blog');
         } catch (error) {
-            // setError(error);
-            setError(error);
-            setLoading(false);
+            dispatch(adminSignInFailure(error));
         }
     }
     

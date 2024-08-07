@@ -12,10 +12,13 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgMenuBoxed } from "react-icons/cg";
 import { Link } from 'react-router-dom';
+import { MdOutlineAdminPanelSettings } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 
 export default function Sidemenu() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [placement, setPlacement] = React.useState('right');
+    const { currentAdmin } = useSelector((state) => state.admin);
 
   return (
     <Box fontWeight={500}>
@@ -35,6 +38,14 @@ export default function Sidemenu() {
                         <Link className='hover:text-red-500 duration-200' to='/products'>Our Products</Link>
                         <Link className='hover:text-red-500 duration-200' to='/Service'>Our Services</Link>
                         <Link className='hover:text-red-500 duration-200' to='/contact'>Contact Us</Link>
+                        {
+                            currentAdmin && (
+                                <Link className=' hover:text-red-500 duration-200' to={'/create-blog'}>Create Blog</Link>
+                            )
+                        }
+                        <Link className=' hover:text-red-500 duration-200 flex items-center gap-2' to={'/admin-login'}>
+                            <MdOutlineAdminPanelSettings className='text-xl'/>Admin
+                        </Link>
                     </Flex>
                 </DrawerBody>
             </DrawerContent>

@@ -35,10 +35,10 @@ export default function CreateBlog() {
     console.log(blogData);
 
   return (
-    <Box my={'5rem'} maxW={{md: '70%', base: '97%'}} rounded={5} mx={'auto'} shadow={'md'} bg={''} color={'gray.800'} p={{md: 6, base: 3}}>
+    <Box my={'5rem'} maxW={{'2xl': '50%',md: '70%', base: '97%'}} rounded={5} mx={'auto'} shadow={'md'} bg={'gray.800'} color={'gray.100'} p={{'2xl': 12,md: 8, base: 3}}>
         <Box>
             <Box mb={10}>
-                <Heading textAlign={'center'} fontSize={30} fontWeight={500}>Create <span className="text-red-500">New Blog</span></Heading>
+                <Heading textAlign={'center'} fontSize={30} fontWeight={500}>Create <span className="text-red-500">New </span>Blog</Heading>
             </Box>
             <form>
                 <Box className='grid grid-cols-1 md:grid-cols-2 place-content-center gap-5'>
@@ -55,7 +55,7 @@ export default function CreateBlog() {
                     </Box>
                     <Box>
                         <Box w={{md:'350px', base: '350px'}} mx={'auto'}>
-                            <Text color={useColorModeValue('white', 'gray.400')} pb={2} textAlign={'center'}><strong className='text-red-500'>Image: </strong><span className="font-normal text-gray-700">The first image will be the cover (max 6)</span></Text>
+                            <Text color={useColorModeValue('white', 'gray.200')} pb={2} textAlign={'center'}><strong className='text-red-500'>Image: </strong><span className="font-normal text-gray-200">The first image will be the cover (max 6)</span></Text>
                             
                             <Flex position={'relative'} justifyContent={'center'} alignItems={'center'} width={'100%'} height={'200px'} rounded={5} bg={'gray.200'}>
                             <input type="file" onChange={(e) => setFile(e.target.files)} 
