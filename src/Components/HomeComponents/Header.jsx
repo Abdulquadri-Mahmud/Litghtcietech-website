@@ -7,8 +7,8 @@ import Sidemenu from './Sidemenu';
 
 export default function Header() {
   return (
-    <Box position={'sticky'} top={0} zIndex={100}>
-        <Flex justifyContent={'space-between'} alignItems={'center'} py={2} px={{md: 8, base: 3}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
+    <Box position={'sticky'} top={0} zIndex={100} shadow={'md'}>
+        <Flex justifyContent={'space-between'} alignItems={'center'} py={3} px={{md: 8, base: 3}} bg={'whiteAlpha.400'} color={'white'} className='glass'>
             <Box>
               <Link to={'/'}>
                 <Image src='/logo.png' maxW={'160px'}/>

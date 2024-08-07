@@ -9,6 +9,8 @@ import About from '../Pages/About';
 import Contact from '../Pages/Contact';
 import NotFound from '../Pages/NotFound';
 import OurProducts from '../Pages/OurProducts';
+import AdminLoging from '../Pages/AdminLoging';
+import CreateBlog from '../Pages/CreateBlog';
 
 export default function RoutePage() {
   return (
@@ -21,6 +23,8 @@ export default function RoutePage() {
             <Route path='/service' element={<Services/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/products' element={<OurProducts/>}/>
+            <Route path='/admin-login' element={<AdminLoging/>}/>
+            <Route path='/create-blog' element={<CreateBlog/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer/>
