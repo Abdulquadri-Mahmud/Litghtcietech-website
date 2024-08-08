@@ -63,7 +63,9 @@ export default function Blog() {
                                     }
                                 </Flex>
                                 <Box roundedBottom={10}padding={3} color={useColorModeValue('black', 'white')} bg={useColorModeValue('white', 'gray.700')}>
-                                    <Text fontWeight={500} py={1} color={''} fontSize={20} textDecor={'underline'} isTruncated>{blog.title}</Text>
+                                    <Link to={`/blogDetails/${blog.id}`} className='font-normal'>
+                                      <Text fontWeight={500} py={1} color={''} fontSize={20} textDecor={'underline'} isTruncated>{blog.title}</Text>
+                                    </Link>
                                     <Text py={1} className='font-normal' fontSize={14}>{blog.body.slice(0,200)} ...</Text>
                                     <Button height={'40px'} mt={4} bg={useColorModeValue('red.500', 'gray.200')} rounded={3} color={useColorModeValue('white', 'black')} _hover={{opacity: 0.7}}>
                                         <Link to={`/blogDetails/${blog.id}`} className='font-normal'>Read More</Link>

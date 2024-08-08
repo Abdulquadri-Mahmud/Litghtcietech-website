@@ -19,6 +19,7 @@ export default function UpdateBlog() {
         postedBy: '',
         body: ''
     });
+    console.log(updateData);
     const [ filesError, setFilesError ] = useState(false);
     const [ files, setFile] = useState(undefined);
     const [filePercentage, setFilePercentage ] = useState(0);
@@ -40,23 +41,20 @@ export default function UpdateBlog() {
             const res = await fetch(fetchBlogId);
             
             const data = await res.json();
-            setBlogId(data)
+            setUpdateData(data)
         }
     
         getSingBlog();
     
     }, []);
-    console.log(blog);
 
       useEffect(() => {
         if (files) {
             handleImagesUpload(files)
         }
     }, [files]);
-
-    console.log(files);
+    
     const handleImagesUpload = (e) => {
-        console.log('click');
         // checking if there is existing image and if images files ia greater than 3
         if (files.length > 0 && files.length + updateData.imageUrl.length < 2) {
           setFilePercentage(true);
@@ -154,16 +152,16 @@ export default function UpdateBlog() {
                 <Box className='grid grid-cols-1 md:grid-cols-2 place-content-center gap-5'>
                     <Box>
                         <Box width={'100%'}>
-                            <input onChange={handleChange} type="text" id='title' className='w-full py-3 bg-gray-200 text-black rounded-md px-4' placeholder='Blog title...' defaultValue={blog.title}/>
+                            <input onChange={handleChange} type="text" id='title' className='w-full py-3 bg-gray-200 text-black rounded-md px-4' placeholder='Blog title...' defaultValue={updateData.title}/>
                         </Box>
                         <Box width={'100%'} py={3}>
-                            <input onChange={handleChange} type="text" id='postedBy' className='w-full py-3 bg-gray-200 text-black rounded-md px-4' placeholder='Posted by...' defaultValue={blog.postedBy}/>
+                            <input onChange={handleChange} type="text" id='postedBy' className='w-full py-3 bg-gray-200 text-black rounded-md px-4' placeholder='Posted by...' defaultValue={updateData.postedBy}/>
                         </Box>
                         <Box color={useColorModeValue('black', 'white')} bg={useColorModeValue('gray.200', 'gray.800')} borderBottomWidth={1} borderColor={useColorModeValue('green.500', '')} py={1} px={2} rounded={5}>
-                            <input type="date" onChange={handleChange} id="date" placeholder="Select Date" className='bg-transparent border-0 text-sm font-normal outline-none w-[100%] my-2 rounded-[0px]' defaultValue={blog.date}/>
+                            <input type="date" onChange={handleChange} id="date" placeholder="Select Date" className='bg-transparent border-0 text-sm font-normal outline-none w-[100%] my-2 rounded-[0px]' defaultValue={updateData.date}/>
                         </Box>
                         <Box mt={3} width={'100%'}>
-                            <textarea onChange={handleChange} id="body" className='h-[150px] p-3 bg-gray-200 text-black w-full rounded-md' placeholder='Blog body...' defaultValue={blog.body}></textarea>
+                            <textarea onChange={handleChange} id="body" className='h-[150px] p-3 bg-gray-200 text-black w-full rounded-md' placeholder='Blog body...' defaultValue={updateData.body}></textarea>
                         </Box>
                     </Box>
                     {
@@ -199,7 +197,7 @@ export default function UpdateBlog() {
                             </Box>
 
                             <Box p={3}>
-                                <Image maxW={'100%'} height={'180px'} rounded={5} src={updateData.imageUrl[0]} defaultValue={blog.imageUrl}/>
+                                <Image maxW={'100%'} height={'180px'} rounded={5} src={updateData.imageUrl} defaultValue={updateData.imageUrl}/>
                             </Box>
                             </Flex>
                             <Box mt={4} color={useColorModeValue('white')}>

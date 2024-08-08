@@ -48,7 +48,7 @@ export default function Blogdetails() {
                 {
                     currentAdmin && (
                         <Box mt={7}>
-                            <Button bg={'gray.800'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                            <Button bg={'gray.800'} _hover={{bg: 'gray.700'}} color={'white'} width={'160px'}>
                                 <Link to={`/updateblog/${blog.id}`}>Updates</Link>
                             </Button>
                         </Box>

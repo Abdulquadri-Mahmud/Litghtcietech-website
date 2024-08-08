@@ -47,7 +47,7 @@ export default function BlogReview() {
                 {
                     currentAdmin && (
                         <Box mt={7}>
-                            <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                            <Button bg={'red.500'} _hover={{bg: 'gray.700'}} color={'white'} width={'160px'}>
                                 <Link to={`/updateblog/${blog.id}`}>Update</Link>
                             </Button>
                         </Box>
