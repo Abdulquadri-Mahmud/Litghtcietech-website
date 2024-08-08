@@ -41,10 +41,10 @@ export default function Blog() {
     <Box>
         <Flex justifyContent={'center'} alignItems={'center'} backgroundPosition={{md: 'bottom', base: "center"}} backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage={'/bg1.jpg'} h={'45vh'} w={'full'} bgBlendMode="multiply" className='deep'>
             <Box color={'white'}>
-                <Heading textAlign={'center'} fontSize={{md: 45, base: 30}}>Our Blog</Heading>
+                <Heading textAlign={'center'} fontWeight={500} fontSize={{md: 40, base: 30}}>Our Blog</Heading>
                 <Box mt={3} textAlign={'center'}>
                     <Link to={'/'}>Home / </Link>
-                    <Link to={'/blog'}>About Us</Link>
+                    <Link to={'/blog'}>Blog</Link>
                 </Box>
             </Box>
         </Flex>
@@ -53,7 +53,7 @@ export default function Blog() {
                 {
                     blogPosts.length > 0 ? (
                         blogPosts.map((blog) => (
-                            <Box className="blog" key={blog.id} width={{base: '100%', md:'350px', md:'32%'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+                            <Box className="blog" key={blog.id} width={{base: '100%', md:'360px', '2xl':'350px'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
                             color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
                                 <Flex padding={3} justifyContent={'center'} width={'100%'} height={{md: '250px', base: '250px'}}>
                                     {

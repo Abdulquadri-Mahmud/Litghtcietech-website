@@ -142,6 +142,11 @@ export default function UpdateBlog() {
         }
       }
 
+    const handleRemoveImage = (index) => {
+      setUpdateData({...updateData,
+        imageUrl: updateData.imageUrl.filter((_, i) => i !== index)
+      })
+    }
   return (
     <Box>
         <Box my={'5rem'} maxW={{'2xl': '50%',xl: '70%',md: '80%', base: '97%'}} rounded={5} mx={'auto'} shadow={'md'} bg={'gray.800'} color={'gray.100'} p={{'2xl': 12,md: 8, base: 3}}>

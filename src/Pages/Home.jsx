@@ -7,6 +7,7 @@ import Section5 from '../Components/HomeComponents/Section5'
 import Section6 from '../Components/HomeComponents/Section6'
 import Hero from '../Components/HomeComponents/Hero'
 import Section2 from '../Components/HomeComponents/Section2'
+import BlogSection from '../Components/HomeComponents/BlogSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Section3/>
         <Section4/>
         <Section6/>
+        <BlogSection/>
         <Section5/>
     </Box>
   )

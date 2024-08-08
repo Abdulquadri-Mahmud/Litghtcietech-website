@@ -25,10 +25,10 @@ export default function Blogdetails() {
         navigate('/blog')
       }
   return (
-    <Box padding={3} width={{md: '60%', base: '100%'}} fontWeight={500} rounded={5} color={useColorModeValue('black')} bg={useColorModeValue('white', 'gray.700')}>
+    <Box padding={5} width={{md: '60%', base: '100%'}} fontWeight={500} rounded={5} color={useColorModeValue('black')} shadow={'md'} bg={useColorModeValue('gray.200', 'gray.700')}>
         <Box>
-            <Box >
-                <Image src={blog.imageUrl} width={'100%'}/>
+            <Box height={{md: '400px'}}>
+                <Image src={blog.imageUrl} maxH={'100%'} rounded={5} width={'100%'}/>
             </Box>
             <Box p={0}>
                 <Text fontSize={25} color={''} py={4}>{blog.title}</Text>

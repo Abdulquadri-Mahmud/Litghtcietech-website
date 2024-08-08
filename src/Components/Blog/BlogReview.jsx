@@ -24,7 +24,7 @@ export default function BlogReview() {
       navigate('/blog')
     }
   return (
-    <Box padding={3} width={{md: '60%', base: '100%'}} fontWeight={500} rounded={5} color={useColorModeValue('black')} bg={useColorModeValue('white', 'gray.700')}>
+    <Box padding={3} width={{md: '60%', base: '100%'}} fontWeight={500} rounded={5} color={useColorModeValue('black')} bg={useColorModeValue('gray.200', 'gray.700')}>
         <Box>
             <Box >
                 <Image src={blog.imageUrl} width={'100%'}/>
@@ -47,7 +47,7 @@ export default function BlogReview() {
                 {
                     currentAdmin && (
                         <Box mt={7}>
-                            <Button bg={'red.500'} _hover={{bg: 'gray.700'}} color={'white'} width={'160px'}>
+                            <Button bg={'gray.800'} _hover={{bg: 'gray.700'}} color={'white'} width={'160px'}>
                                 <Link to={`/updateblog/${blog.id}`}>Update</Link>
                             </Button>
                         </Box>
