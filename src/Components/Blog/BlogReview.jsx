@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Text, useColorModeValue } from '@chakra-ui/react';
 import React, { useContext, useState } from 'react'
 import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { FaCalendarAlt } from 'react-icons/fa';
 import { ReviewContext } from '../../Pages/BlogReviews';
 
