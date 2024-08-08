@@ -135,13 +135,13 @@ export default function AdminLoging() {
                     {/* <input type="checkbox" className='border-none outline-none checked:bg-red-500 h-5 w-5 bg-gray-100'/>
                     <span className='font-semibold'>Remember me</span> */}
                 </Flex>
-                <Box>
+                {/* <Box>
                     <Link to='/forgot-password'>
                         <Text className='font-semibold' color={'red.500'}>Forgot Password</Text>
                     </Link>
-                </Box>
+                </Box> */}
             </Flex>
-            <Flex justifyContent={'center'} mt={5}>
+            <Flex justifyContent={'center'} mt={10}>
                 <Button type='submit' width={'full'} bg={'red.500'} _hover={{bg: 'red.400'}} color={'white'} className='uppercase font-semibold'>
                     {
                         loading ? 'Loading...' : 'Log In'

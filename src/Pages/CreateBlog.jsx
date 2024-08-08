@@ -247,9 +247,9 @@ export default function CreateBlog() {
                             }
                         </Box>
                         <Flex mt={3} justifyContent={'center'}>
-                            <Button type='button' disabled={uploadProgress} onClick={handleImagesUpload} bg={'gray.200'} _hover={{bg: useColorModeValue('red.400')}} color={'black'} rounded={3}>
+                            <Button type='button' disabled={uploadProgress} onClick={handleImagesUpload} bg={'gray.200'} _hover={{bg: useColorModeValue('gray.300')}} color={'black'} rounded={3}>
                                 {
-                                uploadProgress ? 'Uploading' : 'Upload Image'
+                                    uploadProgress ? 'Uploading' : 'Upload Image'
                                 }
                             </Button>
                         </Flex>

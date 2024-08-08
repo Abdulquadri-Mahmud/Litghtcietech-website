@@ -74,7 +74,7 @@ export default function BlogDetails() {
                             <Text fontWeight={400} fontSize={14} className='flex items-center'><FaCalendarAlt/> {blog.date}</Text>
                         </Flex>
                         </Flex>
-                        <Text mt={4} fontWeight={400}>{blog.body}</Text>
+                        <Text mt={4} fontWeight={400} lineHeight={2}>{blog.body}</Text>
                     </Box>
                     {
                         currentAdmin && (

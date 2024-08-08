@@ -1,9 +1,12 @@
 import { Box, Button, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Pagination from '../Components/Pagination/Pagination';
 
 export default function Blog() {
-  const [blogs, setBlogs] = useState({ });
+  const [blogs, setBlogs] = useState({});
+  const [blogCurrentPage, setBlogCurrentPage] = useState(1);
+  const [blogPostPerPage, setBlogPostPerPage] = useState(3);
 
   useEffect(() => {
     try {
@@ -18,7 +21,21 @@ export default function Blog() {
     } catch (error) {
       
     }
-  })
+  }, []);
+
+  const allBlog = [];
+
+  if (blogs.length > 0) {
+    blogs.map((blog) => {
+      allBlog.push(blog);
+    })
+  }
+
+  const blogStartIndex = blogCurrentPage * blogPostPerPage;
+  const blogLastIndex = blogStartIndex - blogPostPerPage;
+
+  const blogPosts = allBlog.slice(blogLastIndex, blogStartIndex)
+  const blogPaginate = blogPaginate => setBlogCurrentPage(blogPaginate);
 
   return (
     <Box>
@@ -34,8 +51,8 @@ export default function Blog() {
         <Box py={'10vh'}>
         <Flex justifyContent={{md: 'center', base: 'start'}} alignItems={{md: 'center', base: 'start'}}  mt={5} flexWrap={'wrap'} gap={3}>
                 {
-                    blogs.length > 0 ? (
-                        blogs.map((blog) => (
+                    blogPosts.length > 0 ? (
+                        blogPosts.map((blog) => (
                             <Box className="blog" key={blog.id} width={{base: '100%', md:'32%'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
                             color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
                                 <Flex padding={3} justifyContent={'center'} width={'100%'} height={{md: '250px', base: '250px'}}>
@@ -59,6 +76,9 @@ export default function Blog() {
                     )
                 }
             </Flex>
+            <Box>
+              <Pagination blogPostPerPage={blogPostPerPage} totalBlogPost={allBlog.length} blogPaginate={blogPaginate}/>
+            </Box>
         </Box>
     </Box>
   )
