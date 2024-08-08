@@ -43,17 +43,28 @@ export default function BlogReview() {
                 </Flex>
                 <Text mt={4} fontWeight={400} lineHeight={2}>{blog.body}</Text>
             </Box>
-            {
-                currentAdmin && (
-                    <Box mt={7}>
-                        <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
-                            {
-                                loading ? 'Deleting...' : 'Delete'
-                            }
-                        </Button>
-                    </Box>
-                )
-            }
+            <Flex gap={5}>
+                {
+                    currentAdmin && (
+                        <Box mt={7}>
+                            <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                                <Link to={`/updateblog/${blog.id}`}>Update</Link>
+                            </Button>
+                        </Box>
+                    )
+                }
+                {
+                    currentAdmin && (
+                        <Box mt={7}>
+                            <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                                {
+                                    loading ? 'Deleting...' : 'Delete'
+                                }
+                            </Button>
+                        </Box>
+                    )
+                }
+            </Flex>
         </Box>
     </Box>
   )

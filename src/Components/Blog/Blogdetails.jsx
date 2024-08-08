@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Text, useColorModeValue } from '@chakra-ui/react';
 import React, { useContext, useState } from 'react'
 import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { BlogContext } from '../../Pages/BlogDetails';
 import { FaCalendarAlt } from 'react-icons/fa';
 
@@ -44,17 +44,28 @@ export default function Blogdetails() {
                 </Flex>
                 <Text mt={4} fontWeight={400} lineHeight={2}>{blog.body}</Text>
             </Box>
-            {
-                currentAdmin && (
-                    <Box mt={7}>
-                        <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
-                            {
-                                loading ? 'Deleting...' : 'Delete'
-                            }
-                        </Button>
-                    </Box>
-                )
-            }
+            <Flex gap={5}>
+                {
+                    currentAdmin && (
+                        <Box mt={7}>
+                            <Button bg={'gray.800'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                                <Link to={`/updateblog/${blog.id}`}>Updates</Link>
+                            </Button>
+                        </Box>
+                    )
+                }
+                {
+                    currentAdmin && (
+                        <Box mt={7}>
+                            <Button onClick={handleDelete} bg={'red.500'} _hover={{bg: 'red.600'}} color={'white'} width={'160px'}>
+                                {
+                                    loading ? 'Deleting...' : 'Delete'
+                                }
+                            </Button>
+                        </Box>
+                    )
+                }
+            </Flex>
         </Box>
     </Box>
   )

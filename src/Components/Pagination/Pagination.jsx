@@ -10,11 +10,11 @@ export default function Pagination({blogPostPerPage, totalBlogPost, blogPaginate
     }
     
     return (
-        <Flex>
+        <Flex justifyContent={'center'} mt={3}>
             {
                 pageNumbers.map((number) => (
                     <Box mt={4} bg={useColorModeValue('', 'gray.700')} key={number}>
-                        <Link onClick={() => blogPaginate(number)} to={'#'} className='w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center border'>{number}</Link>
+                        <Link onClick={() => blogPaginate(number)} to={'#'} className='w-[35px] h-[35px] bg-red-500 rounded-md text-white flex items-center justify-center border'>{number}</Link>
                     </Box>
                 ))
             }

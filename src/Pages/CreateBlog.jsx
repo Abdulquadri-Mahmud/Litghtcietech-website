@@ -187,26 +187,28 @@ export default function CreateBlog() {
                             ) : ''
                         }
                     </Box>
-                    {
-                        success ? (
-                        <>
-                            <AlertDialog isOpen={isOpen} leastDestructiveRef={cancelRef} onClose={onClose}>
-                            <AlertDialogOverlay>
-                                <AlertDialogContent>
-                                <AlertDialogBody fontWeight={500}>
-                                    Blog Posted Successfully
-                                </AlertDialogBody>
-                                <AlertDialogFooter>
-                                    <Button ref={cancelRef} onClick={onClose} bg={useColorModeValue('green.500','gray.700')} color={'white'}>
-                                    Ok
-                                    </Button>
-                                </AlertDialogFooter>
-                                </AlertDialogContent>
-                            </AlertDialogOverlay>
-                            </AlertDialog>
-                        </>
-                        ) : ''
-                    }
+                    <Box px={3}>
+                        {
+                            success ? (
+                            <>
+                                <AlertDialog isOpen={isOpen} leastDestructiveRef={cancelRef} onClose={onClose}>
+                                <AlertDialogOverlay>
+                                    <AlertDialogContent>
+                                    <AlertDialogBody fontWeight={500}>
+                                        Blog Posted Successfully
+                                    </AlertDialogBody>
+                                    <AlertDialogFooter>
+                                        <Button ref={cancelRef} onClick={onClose} bg={useColorModeValue('red.500','red.400')} _hover={{bg: 'red.400'}} color={'white'}>
+                                        Ok
+                                        </Button>
+                                    </AlertDialogFooter>
+                                    </AlertDialogContent>
+                                </AlertDialogOverlay>
+                                </AlertDialog>
+                            </>
+                            ) : ''
+                        }
+                    </Box>
                     <Box>
                         <Text color={useColorModeValue('white', 'gray.200')} pb={2} textAlign={'center'}><strong className='text-red-500'>Image: </strong><span className="font-normal text-gray-200">The first image will be the cover (max 2)</span></Text>
                         <Box w={{md:'350px', base: '350px'}} mx={'auto'}>

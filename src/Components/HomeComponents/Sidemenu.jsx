@@ -31,7 +31,7 @@ export default function Sidemenu() {
                     <Image src='/logo.png' maxW={'140px'}/>
                 </DrawerHeader>
                 <DrawerBody bg={'gray.800'}>
-                    <Flex mt={'5rem'} alignItems={'start'} flexDir={'column'} color={'white'} gap={8} fontWeight={600}>
+                    <Flex mt={'5rem'} alignItems={'start'} flexDir={'column'} color={'white'} gap={5} fontWeight={600}>
                         <Link className='hover:text-red-500 duration-200' to='/'>Home</Link>
                         <Link className='hover:text-red-500 duration-200' to='/about'>About Us</Link>
                         <Link className='hover:text-red-500 duration-200' to='/blog'>Blogs</Link>
