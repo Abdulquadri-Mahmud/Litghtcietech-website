@@ -12,6 +12,7 @@ import OurProducts from '../Pages/OurProducts';
 import AdminLoging from '../Pages/AdminLoging';
 import CreateBlog from '../Pages/CreateBlog';
 import BlogDetails from '../Pages/BlogDetails';
+import BlogReviews from '../Pages/BlogReviews';
 
 export default function RoutePage() {
   return (
@@ -26,7 +27,8 @@ export default function RoutePage() {
             <Route path='/products' element={<OurProducts/>}/>
             <Route path='/admin-login' element={<AdminLoging/>}/>
             <Route path='/create-blog' element={<CreateBlog/>}/>
-            <Route path='/blogDetailes/:blogID' element={<BlogDetails/>}/>
+            <Route path='/blogDetails/:blogID' element={<BlogDetails/>}/>
+            <Route path='/blogreview/:reviewID' element={<BlogReviews/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer/>

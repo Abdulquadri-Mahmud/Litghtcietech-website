@@ -14,7 +14,7 @@ export default function Pagination({blogPostPerPage, totalBlogPost, blogPaginate
             {
                 pageNumbers.map((number) => (
                     <Box mt={4} bg={useColorModeValue('', 'gray.700')} key={number}>
-                        <Link onClick={() => blogPaginate(number)} to={'#'} className='w-[35px] h-[35px] flex items-center justify-center border'>{number}</Link>
+                        <Link onClick={() => blogPaginate(number)} to={'#'} className='w-[35px] h-[35px] bg-red-500 text-white flex items-center justify-center border'>{number}</Link>
                     </Box>
                 ))
             }

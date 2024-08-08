@@ -3,23 +3,26 @@ import React, { createContext, useEffect, useState } from 'react'
 import { FaCalendarAlt, FaLongArrowAltRight, FaRegCalendarAlt } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import Blogdetails from '../Components/Blog/Blogdetails';
+import BlogReview from '../Components/Blog/BlogReview';
 
-export const BlogContext = createContext();
+export const ReviewContext = createContext();
 
-export default function BlogDetails() {
+export default function BlogReviews() {
+    const { currentAdmin } = useSelector((state) => state.admin);
 
-    const [blog, setBlogId] = useState({});
-    const { blogID } = useParams();
+    const [blog, setreviewID] = useState({});
+    const { reviewID } = useParams();
     const [recentBlog, setRecentBlog] = useState({});
+
+    const navigate = useNavigate();
 
   useEffect(() => {
     const getSingBlog = async () => {
-        const fetchBlogId = `https://lightcietechblogapi.onrender.com/api/blogs/${blogID}`;
-        const res = await fetch(fetchBlogId);
+        const fetchreviewID = `https://lightcietechblogapi.onrender.com/api/blogs/${reviewID}`;
+        const res = await fetch(fetchreviewID);
         
         const data = await res.json();
-        setBlogId(data)
+        setreviewID(data)
     }
 
     getSingBlog();
@@ -44,15 +47,15 @@ export default function BlogDetails() {
   return (
     <Box my={'10vh'}>
         <Flex maxW={{md: '97%', base: '100%'}} bg={'gray.200'} shadow={'md'} mx={'auto'} py={'10vh'} justifyContent={'center'} gap={3} flexWrap={'wrap'}>
-            <BlogContext.Provider value={blog}>
-                <Blogdetails blog={blog}/>
-            </BlogContext.Provider>
-            <Box width={{md: '34%', base: '100%'}} p={{md: 0, base: 3}}>
-                <Box shadow={'xl'} rounded={'10'}  p={{md: 4, base: 5}} mt={{md: 0, base:10}} bg={useColorModeValue('white', 'gray.700')}>
+            <ReviewContext.Provider value={blog}>
+                <BlogReview/>
+            </ReviewContext.Provider>
+            <Box width={{md: '34%', base: '100%'}}>
+                <Box shadow={'xl'} rounded={'10'}  p={{md: 4}} mt={{md: 0, base:10}} bg={useColorModeValue('white', 'gray.700')}>
                 <Heading fontWeight={500} fontSize={20} borderLeftWidth={4} borderColor={'red.500'} pl={2}>Recent Post</Heading>
                     {
                         recentBlog.length > 0 && recentBlog.map((recentBlog, index) => (
-                        <Box key={index} my={8} borderBottomWidth={1} borderColor={'gray.300'} pb={8}>
+                        <Box key={recentBlog.id} my={8} borderBottomWidth={1} borderColor={'gray.300'} pb={8}>
                             <Flex gap={3}>
                                 <Image boxSize={75} rounded={'full'} src={recentBlog.imageUrl}/>
                                 <Stack>
@@ -67,7 +70,7 @@ export default function BlogDetails() {
                                         <Text fontWeight={400} fontSize={14} className='flex items-center'><FaRegCalendarAlt/> {blog.date}</Text>
                                     </Flex>
                                     </Flex>
-                                    <Link to={`/blogreview/${recentBlog.id}`} className='text-red-500 text-sm flex items-center gap-2'>Read More <FaLongArrowAltRight/></Link>
+                                    <Link to={`/blogDetails/${recentBlog.id}`} className='text-red-500 text-sm flex items-center gap-2'>Read More <FaLongArrowAltRight/></Link>
                                 </Stack>
                             </Flex>
                         </Box>

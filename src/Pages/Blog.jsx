@@ -11,7 +11,7 @@ export default function Blog() {
   useEffect(() => {
     try {
       const fetchBlogApi = async () => {
-        const url = 'https://lightcietechblogapi.onrender.com/api/blogs';
+        const url = 'https://lightcietechblogapi.onrender.com/api/blogs?_sort=date';
         const res = await fetch(url);
         const data = await res.json();
 
@@ -53,7 +53,7 @@ export default function Blog() {
                 {
                     blogPosts.length > 0 ? (
                         blogPosts.map((blog) => (
-                            <Box className="blog" key={blog.id} width={{base: '100%', md:'32%'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+                            <Box className="blog" key={blog.id} width={{base: '100%', md:'350px', md:'32%'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
                             color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
                                 <Flex padding={3} justifyContent={'center'} width={'100%'} height={{md: '250px', base: '250px'}}>
                                     {
@@ -65,8 +65,8 @@ export default function Blog() {
                                 <Box roundedBottom={10}padding={3} color={useColorModeValue('black', 'white')} bg={useColorModeValue('white', 'gray.700')}>
                                     <Text fontWeight={500} py={1} color={''} fontSize={20} textDecor={'underline'}>{blog.title}</Text>
                                     <Text py={1} className='font-normal' fontSize={14}>{blog.body.slice(0,200)} ...</Text>
-                                    <Button height={'40px'} mt={4} bg={useColorModeValue('blue.500', 'gray.200')} rounded={3} color={useColorModeValue('white', 'black')} _hover={{opacity: 0.7}}>
-                                        <Link to={`/blogDetailes/${blog.id}`} className='font-normal'>Read More</Link>
+                                    <Button height={'40px'} mt={4} bg={useColorModeValue('red.500', 'gray.200')} rounded={3} color={useColorModeValue('white', 'black')} _hover={{opacity: 0.7}}>
+                                        <Link to={`/blogDetails/${blog.id}`} className='font-normal'>Read More</Link>
                                     </Button>
                                 </Box>
                             </Box>
@@ -76,7 +76,7 @@ export default function Blog() {
                     )
                 }
             </Flex>
-            <Box>
+            <Box pl={5}>
               <Pagination blogPostPerPage={blogPostPerPage} totalBlogPost={allBlog.length} blogPaginate={blogPaginate}/>
             </Box>
         </Box>
