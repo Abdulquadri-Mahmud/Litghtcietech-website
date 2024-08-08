@@ -164,7 +164,7 @@ export default function CreateBlog() {
                 <Heading textAlign={'center'} fontSize={30} fontWeight={500}>Create <span className="text-red-500">New </span>Blog</Heading>
             </Box>
             <form onSubmit={handleSubmit}>
-                <Box className='grid grid-cols-1 md:grid-cols-2 place-content-center gap-5'>
+                <Box className='grid grid-cols-1 md:grid-cols-2 place-content-center gap-4'>
                     <Box>
                         <Box width={'100%'}>
                             <input ref={title} onChange={handleChange} type="text" id='title' className='w-full py-3 bg-gray-200 text-black rounded-md px-4' placeholder='Blog title...'/>
@@ -187,29 +187,29 @@ export default function CreateBlog() {
                             ) : ''
                         }
                     </Box>
-                    <Box px={3}>
-                        {
-                            success ? (
-                            <>
-                                <AlertDialog isOpen={isOpen} leastDestructiveRef={cancelRef} onClose={onClose}>
-                                <AlertDialogOverlay>
-                                    <AlertDialogContent>
-                                    <AlertDialogBody fontWeight={500}>
-                                        Blog Posted Successfully
-                                    </AlertDialogBody>
-                                    <AlertDialogFooter>
-                                        <Button ref={cancelRef} onClick={onClose} bg={useColorModeValue('red.500','red.400')} _hover={{bg: 'red.400'}} color={'white'}>
-                                        Ok
-                                        </Button>
-                                    </AlertDialogFooter>
-                                    </AlertDialogContent>
-                                </AlertDialogOverlay>
-                                </AlertDialog>
-                            </>
-                            ) : ''
-                        }
-                    </Box>
                     <Box>
+                        <Box px={3}>
+                            {
+                                success ? (
+                                <>
+                                    <AlertDialog isOpen={isOpen} leastDestructiveRef={cancelRef} onClose={onClose}>
+                                    <AlertDialogOverlay>
+                                        <AlertDialogContent>
+                                        <AlertDialogBody fontWeight={500}>
+                                            Blog Posted Successfully
+                                        </AlertDialogBody>
+                                        <AlertDialogFooter>
+                                            <Button ref={cancelRef} onClick={onClose} bg={useColorModeValue('red.500','red.400')} _hover={{bg: 'red.400'}} color={'white'}>
+                                            Ok
+                                            </Button>
+                                        </AlertDialogFooter>
+                                        </AlertDialogContent>
+                                    </AlertDialogOverlay>
+                                    </AlertDialog>
+                                </>
+                                ) : ''
+                            }
+                        </Box>
                         <Text color={useColorModeValue('white', 'gray.200')} pb={2} textAlign={'center'}><strong className='text-red-500'>Image: </strong><span className="font-normal text-gray-200">The first image will be the cover (max 2)</span></Text>
                         <Box w={{md:'350px', base: '350px'}} mx={'auto'}>
                             <Flex position={'relative'} justifyContent={'center'} alignItems={'center'} width={'100%'} height={'200px'} rounded={5} bg={'gray.200'}>

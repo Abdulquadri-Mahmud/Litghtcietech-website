@@ -11,7 +11,7 @@ export default function Blog() {
   useEffect(() => {
     try {
       const fetchBlogApi = async () => {
-        const url = 'https://lightcietechblogapi.onrender.com/api/blogs?_sort=date';
+        const url = 'https://lightcietechblogapi.onrender.com/api/blogs?_sort=date&_order=desc';
         const res = await fetch(url);
         const data = await res.json();
 

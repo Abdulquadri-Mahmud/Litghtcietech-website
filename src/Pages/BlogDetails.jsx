@@ -29,7 +29,7 @@ export default function BlogDetails() {
   useEffect(() => {
     try {
       const fetchBlogApi = async () => {
-        const url = 'https://lightcietechblogapi.onrender.com/api/blogs?_sort=date&_limit=3';
+        const url = 'https://lightcietechblogapi.onrender.com/api/blogs?_sort=date&_limit=3&_order=desc';
         const res = await fetch(url);
         const data = await res.json();
 
