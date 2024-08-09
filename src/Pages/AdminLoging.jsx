@@ -29,7 +29,7 @@ export default function AdminLoging() {
     };
     useEffect(() => {
         const fetchAdmin = async () => {
-            const url = 'https://json-server-henna-omega.vercel.app/admin';
+            const url = 'https://lightcietechblogapi.onrender.com/admin';
             const res = await fetch(url);
             const data = await res.json();
 

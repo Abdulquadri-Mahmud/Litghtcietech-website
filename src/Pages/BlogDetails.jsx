@@ -15,7 +15,8 @@ export default function BlogDetails() {
 
   useEffect(() => {
     const getSingBlog = async () => {
-        const fetchBlogId = `https://json-server-henna-omega.vercel.app/blogs/${blogID}`;
+        // const fetchBlogId = `https://json-server-henna-omega.vercel.app/blogs/${blogID}`;
+        const fetchBlogId = `https://lightcietechblogapi.onrender.com/blogs/${blogID}`;
         const res = await fetch(fetchBlogId);
         
         const data = await res.json();
@@ -29,7 +30,8 @@ export default function BlogDetails() {
   useEffect(() => {
     try {
       const fetchBlogApi = async () => {
-        const url = 'https://json-server-henna-omega.vercel.app/blogs?_sort=date&_limit=3&_order=desc';
+        // const url = 'https://json-server-henna-omega.vercel.app/blogs?_sort=date&_limit=3&_order=desc';
+        const url = 'https://lightcietechblogapi.onrender.com/blogs?_sort=date&_limit=3&_order=desc';
         const res = await fetch(url);
         const data = await res.json();
 

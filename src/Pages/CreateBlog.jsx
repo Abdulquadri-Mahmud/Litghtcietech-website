@@ -130,7 +130,8 @@ export default function CreateBlog() {
                 return;
             }
 
-            const url = `https://json-server-henna-omega.vercel.app/blogs`;
+            // const url = `https://json-server-henna-omega.vercel.app/blogs`;
+            const url = `https://lightcietechblogapi.onrender.com/blogs`;
 
             const res = await fetch(url, {
                 method: 'POST',

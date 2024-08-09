@@ -11,7 +11,8 @@ export default function Blog() {
   useEffect(() => {
     try {
       const fetchBlogApi = async () => {
-        const url = 'https://json-server-henna-omega.vercel.app/blogs?_sort=date&_order=desc';
+        // const url = 'https://json-server-henna-omega.vercel.app/blogs?_sort=date&_order=desc';
+        const url = 'https://lightcietechblogapi.onrender.com/blogs?_sort=date&_order=desc';
         const res = await fetch(url);
         const data = await res.json();
 
