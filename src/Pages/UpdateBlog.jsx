@@ -37,7 +37,7 @@ export default function UpdateBlog() {
 
     useEffect(() => {
         const getSingBlog = async () => {
-            const fetchBlogId = `https://json-server-henna-omega.vercel.app/api/blogs/${blogID}`;
+            const fetchBlogId = `https://json-server-henna-omega.vercel.app/blogs/${blogID}`;
             const res = await fetch(fetchBlogId);
             
             const data = await res.json();
@@ -112,7 +112,7 @@ export default function UpdateBlog() {
         try {
             setLoading(true);
 
-          const blogId = `https://json-server-henna-omega.vercel.app/api/blogs/${blogID}`;
+          const blogId = `https://json-server-henna-omega.vercel.app/blogs/${blogID}`;
     
           const res = await fetch(blogId, {
             method: 'PATCH',

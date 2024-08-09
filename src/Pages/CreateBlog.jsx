@@ -130,7 +130,7 @@ export default function CreateBlog() {
                 return;
             }
 
-            const url = `https://json-server-henna-omega.vercel.app/api/blogs`;
+            const url = `https://json-server-henna-omega.vercel.app/blogs`;
 
             const res = await fetch(url, {
                 method: 'POST',

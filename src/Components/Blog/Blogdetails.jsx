@@ -16,7 +16,7 @@ export default function Blogdetails() {
     const handleDelete = async () => {
         setLoading(true);
     
-        const fetchBlogId = `https://lightcietechblogapi.onrender.com/api/blogs/${blogID}`;
+        const fetchBlogId = `https://json-server-henna-omega.vercel.app/blogs/${blogID}`;
         const res = await fetch(fetchBlogId, {
           method: 'DELETE',
         });
@@ -27,7 +27,7 @@ export default function Blogdetails() {
   return (
     <Box padding={5} width={{md: '60%', base: '100%'}} fontWeight={500} rounded={5} color={useColorModeValue('black')} shadow={'md'} bg={useColorModeValue('gray.200', 'gray.700')}>
         <Box>
-            <Box height={{md: '400px'}}>
+            <Box height={{md: '100%'}}>
                 <Image src={blog.imageUrl} maxH={'100%'} rounded={5} width={'100%'}/>
             </Box>
             <Box p={0}>

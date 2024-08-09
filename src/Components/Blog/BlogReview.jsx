@@ -15,7 +15,7 @@ export default function BlogReview() {
     const handleDelete = async () => {
       setLoading(true);
   
-      const fetchreviewID = `https://lightcietechblogapi.onrender.com/api/blogs/${reviewID}`;
+      const fetchreviewID = `https://json-server-henna-omega.vercel.app/api/blogs/${reviewID}`;
       const res = await fetch(fetchreviewID, {
         method: 'DELETE',
       });
