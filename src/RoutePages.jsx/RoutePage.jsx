@@ -15,6 +15,7 @@ import BlogDetails from '../Pages/BlogDetails';
 import BlogReviews from '../Pages/BlogReviews';
 import UpdateBlog from '../Pages/UpdateBlog';
 import Whatsapp from '../Components/Whatsapp';
+import BuyProduct from '../Components/BuyProduct';
 
 export default function RoutePage() {
   return (
@@ -35,6 +36,7 @@ export default function RoutePage() {
             <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Whatsapp/>
+        <BuyProduct/>
         <Footer/>
     </Router>
   )

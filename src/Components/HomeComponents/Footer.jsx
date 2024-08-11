@@ -6,7 +6,7 @@ import { IoIosSend } from "react-icons/io";
 export default function Footer() {
   const [send, setSend] = useState({});
 
-  const myEmail = 'adeyemiabdulquadri30@gmail.com';
+  const myEmail = 'lightcietechltd@gmail.com';
 
   const handleChange = (e) => {
     setSend({

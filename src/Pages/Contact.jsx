@@ -14,7 +14,7 @@ import {
 export default function Contact() {
     const [formData, setFormData] = useState({});
     const [error, setError] = useState(false);
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
     const cancelRef = useRef()
 
     const getFirstName = useRef();
@@ -38,12 +38,12 @@ export default function Contact() {
         const checkLastname = getLastName.current.value === '';
         const checkMessage = getMessage.current.value === '';
 
-        if (checkFirstname) {
-            setError('Firstname input field is required!');
-            return;
-        };
         if (checkLastname) {
             setError('Lastname input field is required!');
+            return;
+        };
+        if (checkFirstname) {
+            setError('Firstname input field is required!');
             return;
         };
         if (checkMessage) {
