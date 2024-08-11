@@ -85,8 +85,8 @@ export default function BuyProduct() {
     console.log(formData);
   return (
     <Box>
-        <Box position={'fixed'} right={0} top={'15vh'} zIndex={100}>
-            <Button onClick={onOpen} roundedTopLeft={5} roundedBottomLeft={5} rounded={0} bg={'white'} shadow={'md'}>
+        <Box position={'fixed'} right={0} top={'11vh'} zIndex={100}>
+            <Button onClick={onOpen} roundedBottomLeft={50} rounded={0} color={'red.500'} bg={'white'} _hover={{bg: ''}} shadow={'md'}>
                 Click To Order
             </Button>
         </Box>
