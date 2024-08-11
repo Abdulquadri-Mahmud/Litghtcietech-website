@@ -85,7 +85,7 @@ export default function BuyProduct() {
     console.log(formData);
   return (
     <Box>
-        <Box position={'fixed'} right={0} top={{'2xl': '11vh', xl: '10',base: '11vh'}} zIndex={100}>
+        <Box position={'fixed'} right={0} top={{'2xl': '11vh', xl: '10vh',base: '11vh'}} zIndex={100}>
             <Button onClick={onOpen} roundedBottomLeft={50} rounded={0} color={'red.500'} bg={'white'} _hover={{bg: ''}} shadow={'md'}>
                 Click To Order
             </Button>
