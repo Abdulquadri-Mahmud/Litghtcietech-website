@@ -15,6 +15,11 @@ import {
     AlertTitle,
     AlertDescription,
   } from '@chakra-ui/react';
+import { FaUser } from 'react-icons/fa';
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { AiOutlineProduct } from "react-icons/ai";
+import { FaRegAddressCard } from "react-icons/fa";
 
 export default function BuyProduct() {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -100,39 +105,47 @@ export default function BuyProduct() {
                 <form className='mt-6' onSubmit={hanldeSubmit}>
                     <ModalBody>
                         <Box width={'100%'} position={'relative'}>
-                            <input ref={getLastName} onChange={handleChange} type="text" id='lastname' className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Lastname'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <input ref={getLastName} onChange={handleChange} type="text" id='lastname' className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Lastname'/>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <FaUser className='text-red-500'/>
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <input ref={getFirstName} onChange={handleChange} type="text" id='firstname'  className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Firstname'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <input ref={getFirstName} onChange={handleChange} type="text" id='firstname'  className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Firstname'/>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <FaUser className='text-red-500'/>
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <input ref={phone} onChange={handleChange} type="Number" id='phone'  className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Active Phone Number'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <input ref={phone} onChange={handleChange} type="Number" id='phone'  className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Active Phone Number'/>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <FaPhoneVolume className='text-red-500'/>
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <input ref={whatsappPhone} onChange={handleChange} type="Number" id='whatsappPhone'  className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Whatsapp Phone Number'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <input ref={whatsappPhone} onChange={handleChange} type="Number" id='whatsappPhone'  className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Whatsapp Phone Number'/>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <FaWhatsapp className='text-red-500'/>
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <input ref={product} onChange={handleChange} type="text" id='product'  className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Product Name'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <select id="product" ref={product} onChange={handleChange} className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200'>
+                                <option className='my-2' value="">Select Products</option>
+                                <option className='my-2' value="Kalre lightning flash counter or recorder">Kalre lightning flash counter or recorder</option>
+                                <option className='my-2' value="Paraton lightning rod and it's flash counter">Paraton lightning rod and it's flash counter</option>
+                                <option className='my-2' value="TSTLP surge">TSTLP surge</option>
+                                <option className='my-2' value="Copper rod">Copper rod</option>
+                                <option className='my-2' value="Earthing accessories">Earthing accessories</option>
+                                <option className='my-2' value="Earthing conductors">Earthing conductors</option>
+                            </select>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <AiOutlineProduct className='text-red-500'/>
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <input ref={address} onChange={handleChange} type="text" id='address'  className='p-3 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Delivery Address'/>
-                            <Box position={'absolute'} left={2} top={10}>
-                                {/* <FaUser className='text-red-500'/> */}
+                            <input ref={address} onChange={handleChange} type="text" id='address'  className='p-3 pl-8 w-full rounded-md text-black outline-none border border-gray-200' placeholder='Delivery Address'/>
+                            <Box position={'absolute'} left={2} top={4}>
+                                <FaRegAddressCard className='text-red-500'/>
                             </Box>
                         </Box>
                         {
