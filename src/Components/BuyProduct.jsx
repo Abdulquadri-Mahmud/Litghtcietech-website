@@ -129,7 +129,7 @@ export default function BuyProduct() {
                             </Box>
                         </Box>
                         <Box mt={3} width={'100%'} position={'relative'}>
-                            <select id="product" ref={product} onChange={handleChange} className='h-12 pl-8 w-full rounded-md text-black outline-none border border-gray-200'>
+                            <select id="product" ref={product} onChange={handleChange} className='h-12 md:pl-8 pl-4 w-full rounded-md text-black outline-none border border-gray-200'>
                                 <option className='my-2' value="">Select Products</option>
                                 <option className='my-2' value="Kalre lightning flash counter or recorder">Kalre lightning flash counter or recorder</option>
                                 <option className='my-2' value="Paraton lightning rod and it's flash counter">Paraton lightning rod and it's flash counter</option>
@@ -138,7 +138,7 @@ export default function BuyProduct() {
                                 <option className='my-2' value="Earthing accessories">Earthing accessories</option>
                                 <option className='my-2' value="Earthing conductors">Earthing conductors</option>
                             </select>
-                            <Box position={'absolute'} left={2} top={4}>
+                            <Box position={'absolute'} left={2} top={4} display={{md: 'block', base: 'none'}}>
                                 <AiOutlineProduct className='text-red-500'/>
                             </Box>
                         </Box>
