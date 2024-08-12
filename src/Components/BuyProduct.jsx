@@ -91,7 +91,7 @@ export default function BuyProduct() {
   return (
     <Box>
         <Box position={'fixed'} right={0} top={{'2xl': '11vh', xl: '10vh',base: '11vh'}} zIndex={100}>
-            <Button onClick={onOpen} roundedBottomLeft={50} rounded={0} color={'red.500'} bg={'white'} _hover={{bg: ''}} shadow={'md'}>
+            <Button onClick={onOpen} roundedBottomLeft={50} rounded={0} color={'red.500'} fontWeight={{md: 500, base: 400}} bg={'white'} _hover={{bg: ''}} shadow={'md'}>
                 Click To Order
             </Button>
         </Box>
