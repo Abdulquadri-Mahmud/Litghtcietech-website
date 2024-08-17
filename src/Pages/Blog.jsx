@@ -104,7 +104,7 @@ export default function Blog() {
           <Box className="blog" width={{base: '100%', md:'85%'}} mx={'auto'} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
           color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
             <Box padding={3} width={'100%'} >
-              <img src={'bg4.webp'}className='max-w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
+              <img src={'bg4.webp'}className='w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
             </Box>
             <Box padding={3}>
               <Heading fontWeight={500} fontSize={25}>Lightning Arrestors and Earthing Pits for Building Safety</Heading>
