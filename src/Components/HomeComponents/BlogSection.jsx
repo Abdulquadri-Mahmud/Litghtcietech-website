@@ -32,11 +32,11 @@ export default function BlogSection() {
     })
   }
 
-  const blogStartIndex = blogCurrentPage * blogPostPerPage;
-  const blogLastIndex = blogStartIndex - blogPostPerPage;
+//   const blogStartIndex = blogCurrentPage * blogPostPerPage;
+//   const blogLastIndex = blogStartIndex - blogPostPerPage;
 
-  const blogPosts = allBlog.slice(blogLastIndex, blogStartIndex)
-  const blogPaginate = blogPaginate => setBlogCurrentPage(blogPaginate);
+//   const blogPosts = allBlog.slice(blogLastIndex, blogStartIndex)
+//   const blogPaginate = blogPaginate => setBlogCurrentPage(blogPaginate);
 
   return (
     <Box mb={'10vh'}>
@@ -45,38 +45,54 @@ export default function BlogSection() {
                 <Heading textAlign={'center'} fontWeight={500}>Our Blogs</Heading>
                 <Box width={'120px'} mx={'auto'} mt={3} height={'3px'} bg={'red.500'}></Box>
             </Box>
+
             <Flex justifyContent={{md: 'center', base: 'start'}} alignItems={{md: 'center', base: 'start'}}  mt={16} flexWrap={'wrap'} gap={{'2xl': 6, xl: 2, base: 3}}>
-            {
-                blogPosts.length > 0 ? (
-                    blogPosts.map((blog) => (
-                        <Box className="blog" key={blog.id} width={{base: '100%', xl:'360px', '2xl':'380px'}} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
-                        color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
-                            <Flex padding={3} justifyContent={'center'} width={'100%'} height={{md: '250px', base: '250px'}}>
-                                {
-                                    blog.imageUrl ? (
-                                        <img src={blog.imageUrl}className='w-[100%] rounded-[5px] h-[100%]' alt={blog.title}/>
-                                    ) : ''
-                                }
-                            </Flex>
-                            <Box roundedBottom={10}padding={3} color={useColorModeValue('black', 'white')} bg={useColorModeValue('white', 'gray.700')}>
-                                <Link to={`/blogDetails/${blog.id}`} className='font-normal'>
-                                <Text fontWeight={500} py={1} color={''} fontSize={20} textDecor={'underline'} isTruncated>{blog.title}</Text>
-                                </Link>
-                                <Text py={1} className='font-normal' fontSize={14}>{blog.body.slice(0,200)} ...</Text>
-                                <Button height={'40px'} mt={4} bg={useColorModeValue('gray.800', 'gray.200')} rounded={3} color={useColorModeValue('white', 'black')} _hover={{opacity: 0.7}}>
-                                    <Link to={`/blogDetails/${blog.id}`} className='font-normal'>Read More</Link>
-                                </Button>
-                            </Box>
-                        </Box>
-                    ))
-                ) : (
-                    <Text>No blogs to display</Text>
-                )
-            }
-        </Flex>
-        <Box pl={5}>
-            <Pagination blogPostPerPage={blogPostPerPage} totalBlogPost={allBlog.length} blogPaginate={blogPaginate}/>
-        </Box>
+                <Box my={8} className="blog" width={{base: '100%', md:'30%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+                    color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
+                    <Box padding={3} width={'100%'} height={{md: '300px', base: '100%'}}>
+                        <img src={'blog2.png'}className='w-[100%] rounded-[5px] h-[100%]' alt='Does earthing protect against lightning?'/>
+                    </Box>
+                    <Box padding={3}>
+                        <Heading fontWeight={500} fontSize={20}>Does earthing protect against lightning?</Heading>
+                    </Box>
+                    <Box padding={3}>
+                        <Text>Earthing and lightning protection are crucial for any commercial building. Without proper grounding and protection, a building and its occupants are vulnerable to the devastating effects of lightning strikes, which can cause fires, damage equipment, and even endanger lives....</Text>
+                    </Box>
+                    <Box pl={3} pb={3} color={'red'}>
+                        <Link to={'/blog'}>Raed More...</Link>
+                    </Box>
+                </Box>
+                <Box className="blog" width={{base: '100%', md:'30%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+                    color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
+                    <Box padding={3} width={'100%'} height={{md: '300px', base: '100%'}}>
+                        <img src={'blog3.jpeg'}className='w-[100%] rounded-[5px] h-[100%]' alt='How does grounding prevent lightning strikes?'/>
+                    </Box>
+                    <Box padding={3}>
+                        <Heading fontWeight={500} fontSize={20}>How does grounding prevent lightning strikes?</Heading>
+                    </Box>
+                    <Box padding={3}>
+                        <Text>If the grounding wire is properly connected to both the CMCE device and the ground, it ensures that the electrical charges from the atmosphere safely dissipate into the Earth; eliminating the risk of lightning strikes and their associated damage....</Text>
+                    </Box>
+                    <Box pl={3} pb={3} color={'red'}>
+                        <Link to={'/blog'}>Raed More...</Link>
+                    </Box>
+                </Box>
+                <Box className="blog" width={{base: '100%', md:'30%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+                    color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
+                    <Box padding={3} width={'100%'} height={{md: '300px', base: '100%'}}>
+                        <img src={'bg4.webp'}className='max-w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
+                    </Box>
+                    <Box padding={3}>
+                        <Heading fontWeight={500} fontSize={20}>Lightning Arrestors and Earthing Pits for Building Safety</Heading>
+                    </Box>
+                    <Box padding={3}>
+                        <Text>Lightning, a powerful element of nature, can be breathtaking as well as deadly. High-voltage lightning sparks can cause significant damage especially to tall buildings. However, thanks to electrical inventions such as lightning arrestors and....</Text>                        
+                    </Box>
+                    <Box pl={3} pb={3} color={'red'}>
+                        <Link to={'/blog'}>Raed More...</Link>
+                    </Box>
+                </Box>
+            </Flex>
     </Box>
 </Box>
   )

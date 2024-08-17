@@ -22,7 +22,7 @@ export default function Header() {
               <Flex alignItems={'center'}>
                 <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/'}>Home</Link>
                 <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/about'}>About</Link>
-                {/* <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/blog'}>Blog</Link> */}
+                <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/blog'}>Blog</Link>
                 <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/service'}>Services</Link>
                 <Link className='px-3 hover:text-red-500 duration-200 font-extralight' to={'/contact'}>Contact Us</Link>
                 {/* {

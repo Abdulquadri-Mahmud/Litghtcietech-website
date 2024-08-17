@@ -30,3 +30,9 @@
 .nav a:hover::after{
     width: 100%;
 }
+
+mark{
+    background-color: red;
+    color: white;
+    padding: 1px;
+}
