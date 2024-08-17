@@ -75,6 +75,22 @@ export default function Blog() {
             </Box>
         </Flex>
         <Box py={'10vh'}>
+          <Box className="blog" width={{base: '100%', md:'85%'}} mx={'auto'} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
+          color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
+            <Box padding={3} width={'100%'} height={{md: '550px', base: '100%'}}>
+              <img src={'blog1.jpg'}className='w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
+            </Box>
+            <Box padding={3}>
+              <Heading fontWeight={500} fontSize={25}>Lightning Arrestors and Earthing Pits for Building Safety</Heading>
+            </Box>
+            <Box padding={3}>
+              <Text>Lightning, a powerful element of nature, can be breathtaking as well as deadly. High-voltage lightning sparks can cause significant damage especially to tall buildings. However, thanks to electrical inventions such as lightning arrestors and earthing pits that have engineered a solution for the safety of our building structures and everything within.</Text>
+              <Text mt={8}>The design of the lightning protection system is the most important aspect of a building’s electrical distribution system. During a lightning strike or electrical system fault, lightning arrestors grounded to the earth ensure the protection of structures, equipment and people within. In this article, we explain to you the key elements of the lightning protection system and how this ingenious electrical setup is crucial during lightning hits.</Text>
+              <Text mt={8}>Overall, a lightning protection system consists of external lightning arrestors and internal earthing pit systems. Both systems are crucial for the safety of buildings and their electrical installations. We explain how this works in the subsequent section.</Text>
+              <Text mt={8}>A lightning arrestor is a metal rod that is placed on the top of the building to serve as a lightning conductor. Metal conductors, such as copper or aluminium, run vertically down the building, connecting the lightning rods to the grounding system inside the earth.</Text>
+              <Text mt={8}>The grounding system, also known as earthing pit, is usually made up of rods either copper bonded, solid copper or stainless steel, which are earth conductive materials. <mark> This network of metal conductor earth rods or plates is installed in the ground to dissipate the lightning’s energy safely into the earth. Earthing is primarily done to avoid high-voltage electrical shocks that are dangerous to the equipment, as well as the lives of people handling it.</mark></Text>
+            </Box>
+          </Box>
           <Flex alignItems={'center'} justifyContent={{'2xl': 'space-evenly', md: 'space-between'}} flexWrap={'wrap'}>
             <Box my={8} className="blog" width={{base: '100%', md:'47%'}} mx={'auto'} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
             color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
@@ -101,22 +117,6 @@ export default function Blog() {
               </Box>
             </Box>
           </Flex>
-          <Box className="blog" width={{base: '100%', md:'85%'}} mx={'auto'} h={{base: '100%', md:'100%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
-          color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
-            <Box padding={3} width={'100%'} >
-              <img src={'bg4.webp'}className='w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
-            </Box>
-            <Box padding={3}>
-              <Heading fontWeight={500} fontSize={25}>Lightning Arrestors and Earthing Pits for Building Safety</Heading>
-            </Box>
-            <Box padding={3}>
-              <Text>Lightning, a powerful element of nature, can be breathtaking as well as deadly. High-voltage lightning sparks can cause significant damage especially to tall buildings. However, thanks to electrical inventions such as lightning arrestors and earthing pits that have engineered a solution for the safety of our building structures and everything within.</Text>
-              <Text mt={8}>The design of the lightning protection system is the most important aspect of a building’s electrical distribution system. During a lightning strike or electrical system fault, lightning arrestors grounded to the earth ensure the protection of structures, equipment and people within. In this article, we explain to you the key elements of the lightning protection system and how this ingenious electrical setup is crucial during lightning hits.</Text>
-              <Text mt={8}>Overall, a lightning protection system consists of external lightning arrestors and internal earthing pit systems. Both systems are crucial for the safety of buildings and their electrical installations. We explain how this works in the subsequent section.</Text>
-              <Text mt={8}>A lightning arrestor is a metal rod that is placed on the top of the building to serve as a lightning conductor. Metal conductors, such as copper or aluminium, run vertically down the building, connecting the lightning rods to the grounding system inside the earth.</Text>
-              <Text mt={8}>The grounding system, also known as earthing pit, is usually made up of rods either copper bonded, solid copper or stainless steel, which are earth conductive materials. <mark> This network of metal conductor earth rods or plates is installed in the ground to dissipate the lightning’s energy safely into the earth. Earthing is primarily done to avoid high-voltage electrical shocks that are dangerous to the equipment, as well as the lives of people handling it.</mark></Text>
-            </Box>
-          </Box>
         </Box>
     </Box>
   )
