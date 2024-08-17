@@ -46,7 +46,7 @@ export default function BlogSection() {
                 <Box width={'120px'} mx={'auto'} mt={3} height={'3px'} bg={'red.500'}></Box>
             </Box>
 
-            <Flex justifyContent={{md: 'center', base: 'start'}} alignItems={{md: 'center', base: 'start'}}  mt={16} flexWrap={'wrap'} gap={{'2xl': 6, xl: 2, base: 3}}>
+            <Flex justifyContent={{md: 'center', base: 'start'}} alignItems={{md: 'center', base: 'start'}}  flexWrap={'wrap'} gap={{'2xl': 6, xl: 2, base: 3}}>
                 <Box my={8} className="blog" width={{base: '100%', md:'30%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
                     color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
                     <Box padding={3} width={'100%'} height={{md: '300px', base: '100%'}}>
