@@ -80,7 +80,7 @@ export default function BlogSection() {
                 <Box className="blog" width={{base: '100%', md:'30%'}} rounded={10} position={'relative'} shadow={'md'} bg={useColorModeValue('white', 'gray.700')}
                     color={'black'} borderWidth={1} borderColor={useColorModeValue('', 'gray.600')}>
                     <Box padding={3} width={'100%'} height={{md: '300px', base: '100%'}}>
-                        <img src={'blog1.jpg'}className='max-w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
+                        <img src={'blog1.jpg'}className='w-[100%] rounded-[5px] h-[100%]' alt='Lightning Arrestors and Earthing Pits for Building Safety'/>
                     </Box>
                     <Box padding={3}>
                         <Heading fontWeight={500} fontSize={20}>Lightning Arrestors and Earthing Pits for Building Safety</Heading>
